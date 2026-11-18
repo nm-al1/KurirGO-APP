@@ -1,0 +1,181 @@
+<svg width="393" height="852" viewBox="0 0 393 852" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Device Frame & Canvas Background -->
+  <rect width="393" height="852" rx="44" fill="#F8FAFC"/>
+  <rect x="1.5" y="1.5" width="390" height="849" rx="42.5" stroke="#18181B" stroke-width="3"/>
+
+  <!-- High-Fidelity Makassar Map & Road Network -->
+  <g id="MakassarMap">
+    <!-- Base Landmass / Terrain -->
+    <rect width="393" height="520" fill="#F1F5F9"/>
+
+    <!-- Arterial Roads (Makassar Primary Corridors) -->
+    <!-- Jl. Perintis Kemerdekaan (North to Sudiang) -->
+    <path d="M 120 480 L 110 240 L 90 60" stroke="#CBD5E1" stroke-width="14" stroke-linecap="round"/>
+    <path d="M 120 480 L 110 240 L 90 60" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
+
+    <!-- Jl. Urip Sumoharjo / Pettarani (Central Hub) -->
+    <path d="M 0 360 L 196 350 L 393 330" stroke="#CBD5E1" stroke-width="16" stroke-linecap="round"/>
+    <path d="M 0 360 L 196 350 L 393 330" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/>
+
+    <!-- Jl. Antang Raya (East to Antang) -->
+    <path d="M 196 350 L 290 140 L 393 110" stroke="#CBD5E1" stroke-width="14" stroke-linecap="round"/>
+    <path d="M 196 350 L 290 140 L 393 110" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
+
+    <!-- Connecting Ring Road (Sudiang to Antang) -->
+    <path d="M 90 60 L 180 90 L 290 140" stroke="#CBD5E1" stroke-width="10" stroke-linecap="round"/>
+    <path d="M 90 60 L 180 90 L 290 140" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+
+    <!-- Secondary Streets Grid -->
+    <path d="M 40 180 L 360 210 M 20 280 L 380 270 M 160 120 L 170 420 M 250 200 L 230 460" stroke="#E2E8F0" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Makassar Street Labels (Authentic Geography) -->
+    <text x="14" y="344" font-family="Inter, -apple-system, sans-serif" font-size="9" font-weight="700" fill="#94A3B8" letter-spacing="1">JL. A.P. PETTARANI</text>
+    <text x="74" y="160" font-family="Inter, -apple-system, sans-serif" font-size="9" font-weight="700" fill="#94A3B8" transform="rotate(-78 74 160)">JL. PERINTIS KEMERDEKAAN</text>
+    <text x="264" y="240" font-family="Inter, -apple-system, sans-serif" font-size="9" font-weight="700" fill="#94A3B8" transform="rotate(-62 264 240)">JL. ANTANG RAYA</text>
+    <text x="175" y="80" font-family="Inter, -apple-system, sans-serif" font-size="8.5" font-weight="700" fill="#94A3B8">RING ROAD TAMANGAPA</text>
+  </g>
+
+  <!-- Closed-Loop TSP Route Geometry (V0 -> V2 -> V1 -> V0) -->
+  <g id="TSPRouteGeometry">
+    <!-- Underglow Outer Line -->
+    <polygon points="196,350 290,140 100,110" fill="none" stroke="#C6FF00" stroke-width="10" stroke-linejoin="round" opacity="0.35"/>
+    <!-- Dark Contrast Inner Track -->
+    <polygon points="196,350 290,140 100,110" fill="none" stroke="#18181B" stroke-width="6" stroke-linejoin="round"/>
+    <!-- High-Contrast Electric Lime Main Corridor -->
+    <polygon points="196,350 290,140 100,110" fill="none" stroke="#C6FF00" stroke-width="3.5" stroke-linejoin="round"/>
+
+    <!-- Directional Segment Arrows -->
+    <!-- Segment 1: V0 -> V2 (Northeast) -->
+    <polygon points="247,236 242,246 252,244" fill="#18181B"/>
+    <!-- Segment 2: V2 -> V1 (West) -->
+    <polygon points="191,120 199,114 198,124" fill="#18181B"/>
+    <!-- Segment 3: V1 -> V0 (Southeast Return) -->
+    <polygon points="144,236 142,226 150,230" fill="#18181B"/>
+
+    <!-- Distance Badges on Corridors -->
+    <rect x="252" y="240" width="54" height="18" rx="9" fill="#18181B"/>
+    <text x="279" y="253" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="9.5" font-weight="800" fill="#C6FF00">8.2 KM</text>
+
+    <rect x="176" y="98" width="58" height="18" rx="9" fill="#18181B"/>
+    <text x="205" y="111" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="9.5" font-weight="800" fill="#C6FF00">12.3 KM</text>
+
+    <rect x="94" y="238" width="54" height="18" rx="9" fill="#18181B"/>
+    <text x="121" y="251" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="9.5" font-weight="800" fill="#C6FF00">8.0 KM</text>
+
+    <!-- Node V0: Depot Pettarani (Pulsing Base Hub) -->
+    <circle cx="196" cy="350" r="26" fill="#C6FF00" opacity="0.2"/>
+    <circle cx="196" cy="350" r="18" fill="#18181B" stroke="#C6FF00" stroke-width="3"/>
+    <!-- Depot Icon -->
+    <path d="M 191 354 L 196 348 L 201 354 H 191 Z" fill="#C6FF00"/>
+    <rect x="193" y="352" width="6" height="4" fill="#C6FF00"/>
+    <!-- Depot Label Pill -->
+    <rect x="136" y="378" width="120" height="22" rx="11" fill="#18181B" stroke="#C6FF00" stroke-width="1.2"/>
+    <text x="196" y="393" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#C6FF00">V0 • Hub Pettarani</text>
+
+    <!-- Node V2: Stop #1 Antang -->
+    <circle cx="290" cy="140" r="16" fill="#18181B" stroke="#C6FF00" stroke-width="3"/>
+    <text x="290" y="145" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="900" fill="#FFFFFF">#1</text>
+    <!-- Label Pill -->
+    <rect x="246" y="162" width="88" height="20" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+    <text x="290" y="176" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#18181B">V2 • Antang</text>
+
+    <!-- Node V1: Stop #2 Sudiang -->
+    <circle cx="100" cy="110" r="16" fill="#18181B" stroke="#C6FF00" stroke-width="3"/>
+    <text x="100" y="115" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="900" fill="#FFFFFF">#2</text>
+    <!-- Label Pill -->
+    <rect x="56" y="132" width="90" height="20" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+    <text x="101" y="146" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#18181B">V1 • Sudiang</text>
+  </g>
+
+  <!-- Status Bar (Dark on Map) -->
+  <text x="32" y="32" font-family="Inter, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#18181B">09:41</text>
+  <rect x="141" y="12" width="112" height="28" rx="14" fill="#18181B"/>
+  <circle cx="294" cy="26" r="3" fill="#10B981"/>
+  <text x="302" y="30" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#10B981">GPS</text>
+  <text x="326" y="30" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#18181B">5G</text>
+  <rect x="348" y="21" width="22" height="12" rx="3.5" stroke="#18181B" stroke-width="1.5"/>
+  <rect x="350.5" y="23.5" width="13" height="7" rx="1.5" fill="#18181B"/>
+  <path d="M 371 25.5 C 371.6 25.8 372 26.4 372 27 C 372 27.6 371.6 28.2 371 28.5" stroke="#18181B" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Top Floating Header Pill & Back Button -->
+  <g id="TopBar">
+    <circle cx="42" cy="74" r="20" fill="#FFFFFF" filter="drop-shadow(0px 4px 6px rgba(0,0,0,0.08))"/>
+    <path d="M 45 68 L 39 74 L 45 80" stroke="#18181B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Route Metric Pill -->
+    <rect x="74" y="54" width="299" height="40" rx="20" fill="#18181B"/>
+    <circle cx="89" cy="74" r="4" fill="#C6FF00"/>
+    <text x="101" y="78" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF">28.5 KM (Full Loop) • 1 Jam 10 Mnt</text>
+    <rect x="296" y="62" width="68" height="24" rx="12" fill="#27272A"/>
+    <text x="330" y="78" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#C6FF00">-32% BBM</text>
+  </g>
+
+  <!-- Floating Recenter & Compass Control -->
+  <g id="MapControls">
+    <circle cx="351" cy="420" r="22" fill="#FFFFFF" filter="drop-shadow(0px 4px 6px rgba(0,0,0,0.08))"/>
+    <!-- Recenter Target Vector -->
+    <circle cx="351" cy="420" r="10" fill="none" stroke="#18181B" stroke-width="2"/>
+    <line x1="351" y1="406" x2="351" y2="410" stroke="#18181B" stroke-width="2" stroke-linecap="round"/>
+    <line x1="351" y1="430" x2="351" y2="434" stroke="#18181B" stroke-width="2" stroke-linecap="round"/>
+    <line x1="337" y1="420" x2="341" y2="420" stroke="#18181B" stroke-width="2" stroke-linecap="round"/>
+    <line x1="361" y1="420" x2="365" y2="420" stroke="#18181B" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="351" cy="420" r="3.5" fill="#18181B"/>
+  </g>
+
+  <!-- Bottom Sheet Overlay (Charcoal #18181B, Ergonomic Courier Console) -->
+  <g id="ItinerarySheet">
+    <rect x="0" y="468" width="393" height="384" rx="32" fill="#18181B"/>
+    <!-- Sheet Drag Notch -->
+    <rect x="176" y="478" width="40" height="4" rx="2" fill="#3F3F46"/>
+
+    <!-- Segmented Tab Switcher -->
+    <rect x="20" y="494" width="353" height="44" rx="22" fill="#27272A"/>
+    <!-- Active Tab: Urutan Rute Loop (Electric Lime) -->
+    <rect x="24" y="498" width="176" height="36" rx="18" fill="#C6FF00"/>
+    <text x="112" y="521" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="800" fill="#18181B">Urutan Rute Loop (TSP)</text>
+    <!-- Inactive Tab: Matriks Jarak -->
+    <text x="277" y="521" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#A1A1AA">Detail Jarak (KM)</text>
+
+    <!-- Itinerary Timeline -->
+    <!-- Stop 1: Antang (Priority Node) -->
+    <g id="Itinerary_Stop1">
+      <circle cx="36" cy="564" r="8" fill="#C6FF00"/>
+      <circle cx="36" cy="564" r="4" fill="#18181B"/>
+      <!-- Connecting Track Line -->
+      <line x1="36" y1="576" x2="36" y2="618" stroke="#3F3F46" stroke-width="2" stroke-dasharray="3 3"/>
+      
+      <text x="56" y="562" font-family="Inter, -apple-system, sans-serif" font-size="14" font-weight="800" fill="#FFFFFF">STOP #1 ➔ V2 (Outlet Antang)</text>
+      <text x="56" y="578" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#A1A1AA">Prioritas Pertama • 2 Box • 8.2 KM • Est. 10:15</text>
+    </g>
+
+    <!-- Stop 2: Sudiang -->
+    <g id="Itinerary_Stop2">
+      <circle cx="36" cy="630" r="8" fill="#27272A" stroke="#C6FF00" stroke-width="2"/>
+      <circle cx="36" cy="630" r="3" fill="#C6FF00"/>
+      <!-- Connecting Track Line -->
+      <line x1="36" y1="642" x2="36" y2="684" stroke="#3F3F46" stroke-width="2" stroke-dasharray="3 3"/>
+
+      <text x="56" y="628" font-family="Inter, -apple-system, sans-serif" font-size="14" font-weight="800" fill="#FFFFFF">STOP #2 ➔ V1 (Outlet Sudiang)</text>
+      <text x="56" y="644" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#A1A1AA">Pengantaran Kedua • 3 Box • 12.3 KM • Est. 10:45</text>
+    </g>
+
+    <!-- Stop 3: Closed-Loop Return to Depot -->
+    <g id="Itinerary_Return">
+      <circle cx="36" cy="696" r="8" fill="#3F3F46"/>
+      <circle cx="36" cy="696" r="3" fill="#FFFFFF"/>
+
+      <text x="56" y="694" font-family="Inter, -apple-system, sans-serif" font-size="14" font-weight="800" fill="#FFFFFF">FINISH ➔ Kembali ke Depot Pettarani (V0)</text>
+      <text x="56" y="710" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#A1A1AA">Loop Tertutup • 8.0 KM • Selesai Pukul 11:20 WITA</text>
+    </g>
+
+    <!-- Primary Bottom CTA Button (Electric Lime Full Pill) -->
+    <g id="PrimaryCTA">
+      <rect x="20" y="760" width="353" height="54" rx="27" fill="#C6FF00"/>
+      <!-- Navigation Arrow Vector -->
+      <g transform="translate(96, 778)">
+        <polygon points="2,14 16,8 2,2 5,8" fill="#18181B"/>
+      </g>
+      <text x="124" y="794" font-family="Inter, -apple-system, sans-serif" font-size="15" font-weight="800" fill="#18181B">Mulai Navigasi KurirGO</text>
+    </g>
+  </g>
+</svg>

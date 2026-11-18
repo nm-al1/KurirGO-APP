@@ -1,0 +1,159 @@
+<svg width="393" height="852" viewBox="0 0 393 852" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Device Frame & Canvas Background -->
+  <rect width="393" height="852" rx="44" fill="#18181B"/>
+  <rect x="1.5" y="1.5" width="390" height="849" rx="42.5" stroke="#27272A" stroke-width="3"/>
+
+  <!-- Status Bar (White on Dark) -->
+  <text x="32" y="32" font-family="Inter, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">09:41</text>
+  <!-- Dynamic Island -->
+  <rect x="141" y="12" width="112" height="28" rx="14" fill="#000000"/>
+  <!-- Status Indicators (GPS, 5G, Battery) -->
+  <circle cx="294" cy="26" r="3" fill="#10B981"/>
+  <text x="302" y="30" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#10B981">GPS</text>
+  <text x="326" y="30" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">5G</text>
+  <rect x="348" y="21" width="22" height="12" rx="3.5" stroke="#FFFFFF" stroke-width="1.5"/>
+  <rect x="350.5" y="23.5" width="13" height="7" rx="1.5" fill="#FFFFFF"/>
+  <path d="M 371 25.5 C 371.6 25.8 372 26.4 372 27 C 372 27.6 371.6 28.2 371 28.5" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Top Dark Header Area -->
+  <g id="TopHeader">
+    <!-- Back Button Pill -->
+    <circle cx="42" cy="74" r="20" fill="#27272A"/>
+    <path d="M 45 68 L 39 74 L 45 80" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Screen Flow Badge -->
+    <rect x="74" y="64" width="110" height="20" rx="10" fill="#27272A"/>
+    <text x="129" y="78" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#C6FF00">TAHAP 1: VERIFIKASI</text>
+
+    <!-- KurirGO Brand Badge (Top Right Header) -->
+    <g id="BrandBadge" transform="translate(262, 57)">
+      <rect width="111" height="34" rx="17" fill="#27272A" stroke="#3F3F46" stroke-width="1.2"/>
+      <g transform="translate(10, 8)">
+        <polygon points="9,1 17,5 9,9 1,5" fill="#52525B"/>
+        <polygon points="1,5 9,9 9,17 1,13" fill="#3F3F46"/>
+        <polygon points="9,9 17,5 17,13 9,17" fill="#27272A"/>
+        <polygon points="4,4 7,3 7,15 4,16" fill="#C6FF00"/>
+        <polygon points="7,8 14,2 16,4 8,10" fill="#C6FF00"/>
+        <polygon points="8,9 15,15 13,17 6,11" fill="#C6FF00"/>
+      </g>
+      <text x="34" y="22" font-family="Inter, -apple-system, sans-serif" font-size="13.5" font-weight="900" fill="#FFFFFF" letter-spacing="-0.3">Kurir<tspan fill="#C6FF00" font-style="italic">GO</tspan></text>
+    </g>
+
+    <!-- Title & Subtitle (Anti-Slop: Professional Courier Language) -->
+    <text x="24" y="124" font-family="Inter, -apple-system, sans-serif" font-size="24" font-weight="900" fill="#FFFFFF">Verifikasi Muatan Box</text>
+    <text x="24" y="146" font-family="Inter, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#A1A1AA">Periksa boks fisik di bagasi motor sebelum memulai rute</text>
+
+    <!-- Cargo Summary Capsule -->
+    <rect x="24" y="156" width="170" height="24" rx="12" fill="#27272A"/>
+    <circle cx="36" cy="168" r="4" fill="#C6FF00"/>
+    <text x="46" y="172" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">Total 5 Box • 2 Alamat</text>
+  </g>
+
+  <!-- Curved Bottom Sheet (White Clean Surface) -->
+  <g id="BottomSheet">
+    <rect x="0" y="194" width="393" height="658" rx="32" fill="#FFFFFF"/>
+    
+    <!-- Drag Handle -->
+    <rect x="176" y="206" width="40" height="4" rx="2" fill="#CBD5E1"/>
+
+    <!-- Inspection Instruction Banner (Anti-Slop: Vector Shield Warning Icon, No Emoji) -->
+    <g id="NoticeBanner">
+      <rect x="20" y="222" width="353" height="44" rx="12" fill="#FFFBEB" stroke="#FDE68A" stroke-width="1"/>
+      <!-- Vector Shield / Alert Icon -->
+      <g transform="translate(32, 234)">
+        <polygon points="10,2 18,6 18,13 10,18 2,13 2,6" fill="#F59E0B"/>
+        <line x1="10" y1="6" x2="10" y2="11" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="10" cy="14" r="1" fill="#FFFFFF"/>
+      </g>
+      <text x="58" y="243" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#92400E">Pemeriksaan Fisik Bagasi Kurir</text>
+      <text x="58" y="256" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="500" fill="#B45309">Pastikan segel box utuh dan temperatur kemasan terjaga.</text>
+    </g>
+
+    <!-- Card 1: Checked Active Item (Matte Charcoal with Electric Lime Accent) -->
+    <g id="Item_BRW01_Checked">
+      <rect x="20" y="278" width="353" height="96" rx="20" fill="#18181B"/>
+      
+      <!-- Authentic 3D Isometric Cardboard Box -->
+      <g transform="translate(36, 296)">
+        <polygon points="28,4 50,16 28,28 6,16" fill="#E3BA87"/>
+        <polygon points="6,16 28,28 28,52 6,40" fill="#C79966"/>
+        <polygon points="28,28 50,16 50,40 28,52" fill="#AB7D4F"/>
+        <!-- Browcyl Green Tape -->
+        <polygon points="25,5 31,8 31,48 25,45" fill="#C6FF00" opacity="0.95"/>
+      </g>
+
+      <!-- Text Details -->
+      <text x="100" y="306" font-family="Inter, -apple-system, sans-serif" font-size="16" font-weight="800" fill="#FFFFFF">BRW-01</text>
+      <text x="168" y="306" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#C6FF00">3 Box</text>
+      <text x="100" y="326" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#D4D4D8">Brownies Unti &amp; Cokelat Klasik</text>
+      
+      <!-- Destination Tag -->
+      <rect x="100" y="338" width="136" height="20" rx="10" fill="#27272A"/>
+      <circle cx="110" cy="348" r="3" fill="#C6FF00"/>
+      <text x="118" y="352" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#E4E4E7">Outlet Sudiang (V1)</text>
+
+      <!-- Checkmark Button: Checked State (Neon Lime Full Circle) -->
+      <circle cx="342" cy="326" r="16" fill="#C6FF00"/>
+      <path d="M 334 326 L 339 331 L 350 320" stroke="#18181B" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Card 2: Unchecked Item (White with Crisp Border & Interactive Checkbox) -->
+    <g id="Item_BRW02_Unchecked">
+      <rect x="20" y="386" width="353" height="96" rx="20" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+      
+      <!-- 3D Isometric Cardboard Box -->
+      <g transform="translate(36, 404)">
+        <polygon points="28,4 50,16 28,28 6,16" fill="#E3BA87"/>
+        <polygon points="6,16 28,28 28,52 6,40" fill="#C79966"/>
+        <polygon points="28,28 50,16 50,40 28,52" fill="#AB7D4F"/>
+        <!-- Browcyl Green Tape -->
+        <polygon points="25,5 31,8 31,48 25,45" fill="#CBD5E1"/>
+      </g>
+
+      <!-- Text Details -->
+      <text x="100" y="414" font-family="Inter, -apple-system, sans-serif" font-size="16" font-weight="800" fill="#18181B">BRW-02</text>
+      <text x="168" y="414" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#64748B">2 Box</text>
+      <text x="100" y="434" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#64748B">Brownies Choco Banana Melt</text>
+      
+      <!-- Destination Tag -->
+      <rect x="100" y="446" width="130" height="20" rx="10" fill="#F1F5F9"/>
+      <circle cx="110" cy="456" r="3" fill="#64748B"/>
+      <text x="118" y="460" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#64748B">Outlet Antang (V2)</text>
+
+      <!-- Checkmark Button: Unchecked Interactive Square (With subtle pulsing cue) -->
+      <rect x="328" y="412" width="28" height="28" rx="8" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+    </g>
+
+    <!-- Cargo Status Alert (Clean Microcopy, Vector Warning Icon, Zero Emoji) -->
+    <g id="AlertStatus">
+      <rect x="20" y="496" width="353" height="52" rx="16" fill="#FEF2F2" stroke="#FEE2E2" stroke-width="1.2"/>
+      <circle cx="42" cy="522" r="11" fill="#EF4444"/>
+      <!-- Clean Vector Exclamation -->
+      <line x1="42" y1="517" x2="42" y2="522" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="42" cy="526" r="1.2" fill="#FFFFFF"/>
+      <text x="62" y="518" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="800" fill="#991B1B">1 Pesanan Belum Terverifikasi</text>
+      <text x="62" y="534" font-family="Inter, -apple-system, sans-serif" font-size="10.5" font-weight="500" fill="#B91C1C">Centang BRW-02 untuk mengaktifkan kalkulasi rute loop.</text>
+    </g>
+
+    <!-- Algorithm Optimization Note Card (Academic & Real-world context) -->
+    <g id="AlgorithmCard">
+      <rect x="20" y="562" width="353" height="74" rx="16" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="36" y="584" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="800" fill="#18181B">Optimasi Rute Tertutup (TSP)</text>
+      <text x="36" y="602" font-family="Inter, -apple-system, sans-serif" font-size="10.5" font-weight="500" fill="#64748B">Algoritma otomatis memprioritaskan alamat terdekat</text>
+      <text x="36" y="618" font-family="Inter, -apple-system, sans-serif" font-size="10.5" font-weight="500" fill="#64748B">dan mengunci titik akhir kembali ke Depot Pettarani (V0).</text>
+    </g>
+
+    <!-- Primary Bottom CTA Button (Electric Lime Full Pill) -->
+    <g id="PrimaryCTA">
+      <rect x="20" y="760" width="353" height="54" rx="27" fill="#C6FF00"/>
+      <!-- Route Graph Vector Icon -->
+      <g transform="translate(94, 778)">
+        <circle cx="4" cy="4" r="3" fill="#18181B"/>
+        <circle cx="16" cy="4" r="3" fill="#18181B"/>
+        <circle cx="10" cy="14" r="3" fill="#18181B"/>
+        <path d="M 4 4 L 16 4 L 10 14 Z" stroke="#18181B" stroke-width="1.8" fill="none"/>
+      </g>
+      <text x="122" y="794" font-family="Inter, -apple-system, sans-serif" font-size="15" font-weight="800" fill="#18181B">Urutkan Rute Loop (TSP)</text>
+    </g>
+  </g>
+</svg>

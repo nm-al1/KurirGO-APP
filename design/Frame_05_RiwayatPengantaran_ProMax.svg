@@ -1,0 +1,190 @@
+<svg width="393" height="852" viewBox="0 0 393 852" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Device Frame & Canvas Background (Light Canvas #F8FAFC - Harmonized with Pro Max Suite) -->
+  <rect width="393" height="852" rx="44" fill="#F8FAFC"/>
+  <rect x="1.5" y="1.5" width="390" height="849" rx="42.5" stroke="#18181B" stroke-width="3"/>
+
+  <!-- Status Bar (Charcoal on Light) -->
+  <text x="32" y="32" font-family="Inter, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#18181B">09:41</text>
+  <!-- Dynamic Island -->
+  <rect x="141" y="12" width="112" height="28" rx="14" fill="#18181B"/>
+  <!-- Status Icons (5G, GPS Lock, Battery) -->
+  <circle cx="294" cy="26" r="3" fill="#10B981"/>
+  <text x="302" y="30" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#10B981">GPS</text>
+  <text x="326" y="30" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#18181B">5G</text>
+  <rect x="348" y="21" width="22" height="12" rx="3.5" stroke="#18181B" stroke-width="1.5"/>
+  <rect x="350.5" y="23.5" width="13" height="7" rx="1.5" fill="#18181B"/>
+  <path d="M 371 25.5 C 371.6 25.8 372 26.4 372 27 C 372 27.6 371.6 28.2 371 28.5" stroke="#18181B" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Top Navigation Header -->
+  <g id="TopNav">
+    <!-- Back Button Circle Pill -->
+    <circle cx="40" cy="74" r="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+    <path d="M 43 68 L 37 74 L 43 80" stroke="#18181B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Screen Flow Badge -->
+    <rect x="68" y="64" width="144" height="20" rx="10" fill="#27272A"/>
+    <text x="140" y="78" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="9" font-weight="800" fill="#C6FF00">PENGANTARAN SELESAI</text>
+
+    <!-- KurirGO Brand Badge (Official Clean Pill) -->
+    <g id="BrandBadge" transform="translate(262, 57)">
+      <rect width="111" height="34" rx="17" fill="#18181B" stroke="#27272A" stroke-width="1.2"/>
+      <circle cx="18" cy="17" r="4.5" fill="#C6FF00"/>
+      <text x="32" y="22" font-family="Inter, -apple-system, sans-serif" font-size="13.5" font-weight="900" fill="#FFFFFF" letter-spacing="-0.3">Kurir<tspan fill="#C6FF00" font-style="italic">GO</tspan></text>
+    </g>
+
+    <!-- Title & Subtitle -->
+    <text x="20" y="118" font-family="Inter, -apple-system, sans-serif" font-size="20" font-weight="900" fill="#18181B">Riwayat Pengantaran</text>
+    <text x="20" y="136" font-family="Inter, -apple-system, sans-serif" font-size="11.5" font-weight="500" fill="#64748B">2 Pesanan Selesai • Cabang Pettarani • 15 Nov 2026</text>
+  </g>
+
+  <!-- Hero Settlement & Cashier Card (Matte Charcoal #18181B with Electric Lime Accents) -->
+  <g id="CashierSettlementCard">
+    <rect x="20" y="150" width="353" height="142" rx="22" fill="#18181B"/>
+
+    <!-- Header Card Tag -->
+    <rect x="36" y="166" width="148" height="20" rx="10" fill="#27272A"/>
+    <!-- Wallet / Cash Icon -->
+    <g transform="translate(44, 171)">
+      <rect x="1" y="1" width="12" height="8" rx="2" stroke="#C6FF00" stroke-width="1.2" fill="none"/>
+      <circle cx="9" cy="5" r="1.2" fill="#C6FF00"/>
+    </g>
+    <text x="62" y="180" font-family="Inter, -apple-system, sans-serif" font-size="9" font-weight="800" fill="#C6FF00">SETORAN KASIR CABANG</text>
+
+    <!-- Split Column: Tunai vs Non-Tunai -->
+    <!-- Column 1: Uang Tunai COD (Wajib Setor) -->
+    <g transform="translate(36, 196)">
+      <text x="0" y="10" font-family="Inter, -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#A1A1AA">Tunai / COD (Wajib Setor)</text>
+      <text x="0" y="34" font-family="Inter, -apple-system, sans-serif" font-size="22" font-weight="900" fill="#C6FF00">Rp 150.000</text>
+      <circle cx="4" cy="46" r="3" fill="#F59E0B"/>
+      <text x="12" y="49" font-family="Inter, -apple-system, sans-serif" font-size="9.5" font-weight="700" fill="#FBBF24">1 Pesanan (Fisik di Tas)</text>
+    </g>
+
+    <!-- Vertical Divider Line -->
+    <line x1="196" y1="196" x2="196" y2="252" stroke="#27272A" stroke-width="1.2"/>
+
+    <!-- Column 2: Non-Tunai (QRIS & Transfer) -->
+    <g transform="translate(210, 196)">
+      <text x="0" y="10" font-family="Inter, -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#A1A1AA">Non-Tunai (QRIS/Transfer)</text>
+      <text x="0" y="34" font-family="Inter, -apple-system, sans-serif" font-size="22" font-weight="900" fill="#FFFFFF">Rp 225.000</text>
+      <circle cx="4" cy="46" r="3" fill="#10B981"/>
+      <text x="12" y="49" font-family="Inter, -apple-system, sans-serif" font-size="9.5" font-weight="700" fill="#34D399">1 Pesanan (Masuk Rekening)</text>
+    </g>
+
+    <!-- Bottom Summary Strip inside Hero -->
+    <rect x="36" y="258" width="321" height="20" rx="10" fill="#232326"/>
+    <text x="46" y="272" font-family="Inter, -apple-system, sans-serif" font-size="9.5" font-weight="600" fill="#A1A1AA">Total Omzet Pengantaran:</text>
+    <text x="347" y="272" text-anchor="end" font-family="Inter, -apple-system, sans-serif" font-size="10.5" font-weight="800" fill="#FFFFFF">Rp 375.000 (2 Pesanan)</text>
+  </g>
+
+  <!-- Metric Badges Row (3 White Metric Capsules on Light Canvas) -->
+  <g id="MetricCapsules" transform="translate(20, 304)">
+    <!-- Capsule 1: Total Box Kue -->
+    <rect x="0" y="0" width="111" height="54" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <text x="12" y="20" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#64748B">Boks Terantar</text>
+    <text x="12" y="40" font-family="Inter, -apple-system, sans-serif" font-size="15.5" font-weight="900" fill="#18181B">5 Box <tspan font-size="11" font-weight="700" fill="#047857">(100%)</tspan></text>
+
+    <!-- Capsule 2: Total Jarak -->
+    <rect x="121" y="0" width="111" height="54" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <text x="133" y="20" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#64748B">Total Jarak</text>
+    <text x="133" y="40" font-family="Inter, -apple-system, sans-serif" font-size="15.5" font-weight="900" fill="#18181B">28.5 KM</text>
+
+    <!-- Capsule 3: Waktu Tempuh -->
+    <rect x="242" y="0" width="111" height="54" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <text x="254" y="20" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#64748B">Waktu Tempuh</text>
+    <text x="254" y="40" font-family="Inter, -apple-system, sans-serif" font-size="14.5" font-weight="900" fill="#18181B">1 Jam 10 Mnt</text>
+  </g>
+
+  <!-- Section Title: Delivery Timeline -->
+  <g id="TimelineSectionHeader">
+    <text x="20" y="382" font-family="Inter, -apple-system, sans-serif" font-size="13" font-weight="800" fill="#18181B">Rincian Pengantaran Hari Ini</text>
+    <rect x="283" y="369" width="90" height="18" rx="9" fill="#ECFDF5"/>
+    <text x="328" y="382" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="9" font-weight="800" fill="#047857">SEMUA LUNAS</text>
+  </g>
+
+  <!-- Delivery Timeline Cards List (White Cards on Slate Canvas) -->
+  <g id="DeliveryTimeline">
+    <!-- Stop 1 Card: Ibu Nurul (Outlet Antang) -->
+    <g id="Card_Stop1" transform="translate(20, 394)">
+      <rect width="353" height="92" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+
+      <!-- Stop Indicator Circle (Matte Charcoal with Lime Accent) -->
+      <circle cx="28" cy="28" r="14" fill="#18181B" stroke="#C6FF00" stroke-width="2"/>
+      <text x="28" y="32" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="900" fill="#C6FF00">#1</text>
+
+      <!-- Customer Info & Time -->
+      <text x="52" y="25" font-family="Inter, -apple-system, sans-serif" font-size="13.5" font-weight="800" fill="#18181B">Ibu Nurul (Outlet Antang)</text>
+      <text x="340" y="24" text-anchor="end" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#64748B">10:15 WITA</text>
+      <text x="52" y="42" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#64748B">Jl. Antang Raya No. 45 • 2 Box (Choco Banana)</text>
+
+      <!-- Payment & Delivery Badges -->
+      <rect x="52" y="55" width="112" height="22" rx="6" fill="#FFFBEB"/>
+      <circle cx="62" cy="66" r="3" fill="#F59E0B"/>
+      <text x="70" y="70" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#B45309">COD Rp 150.000</text>
+
+      <rect x="172" y="55" width="80" height="22" rx="6" fill="#ECFDF5"/>
+      <text x="212" y="70" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="9.5" font-weight="800" fill="#047857">Lunas Tunai</text>
+    </g>
+
+    <!-- Connecting Timeline Track -->
+    <line x1="48" y1="490" x2="48" y2="506" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="3 3"/>
+
+    <!-- Stop 2 Card: Bpk. Rahmat (Outlet Sudiang) -->
+    <g id="Card_Stop2" transform="translate(20, 508)">
+      <rect width="353" height="92" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+
+      <!-- Stop Indicator Circle -->
+      <circle cx="28" cy="28" r="14" fill="#18181B" stroke="#C6FF00" stroke-width="2"/>
+      <text x="28" y="32" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="900" fill="#C6FF00">#2</text>
+
+      <!-- Customer Info & Time -->
+      <text x="52" y="25" font-family="Inter, -apple-system, sans-serif" font-size="13.5" font-weight="800" fill="#18181B">Bpk. Rahmat (Outlet Sudiang)</text>
+      <text x="340" y="24" text-anchor="end" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#64748B">10:45 WITA</text>
+      <text x="52" y="42" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#64748B">Jl. Perintis KM 18 • 3 Box (Unti &amp; Cokelat)</text>
+
+      <!-- Payment & Delivery Badges -->
+      <rect x="52" y="55" width="118" height="22" rx="6" fill="#ECFDF5"/>
+      <circle cx="62" cy="66" r="3" fill="#10B981"/>
+      <text x="70" y="70" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#047857">QRIS Rp 225.000</text>
+
+      <rect x="178" y="55" width="86" height="22" rx="6" fill="#F1F5F9"/>
+      <text x="221" y="70" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="9.5" font-weight="800" fill="#475569">Terverifikasi</text>
+    </g>
+
+    <!-- Connecting Timeline Track -->
+    <line x1="48" y1="604" x2="48" y2="620" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="3 3"/>
+
+    <!-- Finish Branch Card: Kembali ke Cabang Pettarani -->
+    <g id="Card_Finish" transform="translate(20, 622)">
+      <rect width="353" height="66" rx="16" fill="#F8FAFC" stroke="#18181B" stroke-width="1.5"/>
+      <circle cx="28" cy="33" r="14" fill="#18181B"/>
+      <!-- Home / Branch Vector Icon -->
+      <path d="M 23 35 L 28 28 L 33 35 Z" fill="#C6FF00"/>
+      <rect x="25" y="33" width="6" height="5" fill="#C6FF00"/>
+
+      <text x="52" y="27" font-family="Inter, -apple-system, sans-serif" font-size="13" font-weight="800" fill="#18181B">Tiba Kembali di Cabang Pettarani</text>
+      <text x="340" y="27" text-anchor="end" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#047857">11:20 WITA</text>
+      <text x="52" y="46" font-family="Inter, -apple-system, sans-serif" font-size="10.5" font-weight="500" fill="#64748B">Pengantaran Tuntas • Bagasi Motor Kosong</text>
+    </g>
+  </g>
+
+  <!-- Bottom CTA Action (54px Full Pill Electric Lime) -->
+  <g id="BottomAction">
+    <rect x="20" y="718" width="353" height="54" rx="27" fill="#C6FF00" stroke="#18181B" stroke-width="1.5"/>
+    <!-- Receipt / Handover Vector Icon -->
+    <g transform="translate(80, 735)">
+      <rect x="1" y="1" width="14" height="18" rx="2" stroke="#18181B" stroke-width="2" fill="none"/>
+      <line x1="4" y1="6" x2="12" y2="6" stroke="#18181B" stroke-width="1.8" stroke-linecap="round"/>
+      <line x1="4" y1="10" x2="12" y2="10" stroke="#18181B" stroke-width="1.8" stroke-linecap="round"/>
+      <line x1="4" y1="14" x2="9" y2="14" stroke="#18181B" stroke-width="1.8" stroke-linecap="round"/>
+    </g>
+    <text x="196" y="751" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="14.5" font-weight="900" fill="#18181B">Setor Tunai ke Kasir Depot</text>
+
+    <!-- Subtitle Note -->
+    <text x="196" y="794" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#64748B">
+      Uang tunai COD fisik diserahkan ke kasir Cabang Pettarani
+    </text>
+  </g>
+
+  <!-- Bottom Home Indicator Pill -->
+  <rect x="126" y="834" width="140" height="5" rx="2.5" fill="#18181B"/>
+</svg>

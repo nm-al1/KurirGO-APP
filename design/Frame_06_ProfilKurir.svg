@@ -1,0 +1,206 @@
+<svg width="393" height="852" viewBox="0 0 393 852" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Device Frame & Canvas Background -->
+  <rect width="393" height="852" rx="44" fill="#F8FAFC"/>
+  <rect x="1.5" y="1.5" width="390" height="849" rx="42.5" stroke="#18181B" stroke-width="3"/>
+
+  <!-- Status Bar -->
+  <text x="32" y="32" font-family="Inter, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#18181B">09:41</text>
+  <!-- Dynamic Island -->
+  <rect x="141" y="12" width="112" height="28" rx="14" fill="#18181B"/>
+  <!-- Status Icons (5G, GPS Lock, Battery) -->
+  <circle cx="294" cy="26" r="3" fill="#10B981"/>
+  <text x="302" y="30" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#10B981">GPS</text>
+  <text x="326" y="30" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#18181B">5G</text>
+  <rect x="348" y="21" width="22" height="12" rx="3.5" stroke="#18181B" stroke-width="1.5"/>
+  <rect x="350.5" y="23.5" width="13" height="7" rx="1.5" fill="#18181B"/>
+  <path d="M 371 25.5 C 371.6 25.8 372 26.4 372 27 C 372 27.6 371.6 28.2 371 28.5" stroke="#18181B" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Top Navigation Header -->
+  <g id="TopHeader">
+    <!-- Back Button Circle Pill -->
+    <circle cx="40" cy="74" r="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+    <path d="M 43 68 L 37 74 L 43 80" stroke="#18181B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Screen Title -->
+    <text x="70" y="80" font-family="Inter, -apple-system, sans-serif" font-size="18.5" font-weight="900" fill="#18181B">Profil Mitra Kurir</text>
+
+    <!-- KurirGO Brand Badge (Official Clean Pill) -->
+    <g id="BrandBadge" transform="translate(262, 57)">
+      <rect width="111" height="34" rx="17" fill="#18181B" stroke="#27272A" stroke-width="1.2"/>
+      <circle cx="18" cy="17" r="4.5" fill="#C6FF00"/>
+      <text x="32" y="22" font-family="Inter, -apple-system, sans-serif" font-size="13.5" font-weight="900" fill="#FFFFFF" letter-spacing="-0.3">Kurir<tspan fill="#C6FF00" font-style="italic">GO</tspan></text>
+    </g>
+  </g>
+
+  <!-- Courier Hero Identity Card (Matte Charcoal) -->
+  <g id="CourierHeroCard">
+    <rect x="20" y="104" width="353" height="174" rx="22" fill="#18181B"/>
+
+    <!-- Avatar with Professional Courier Cap & Polo Shirt -->
+    <g transform="translate(36, 122)">
+      <!-- Outer Accent Ring -->
+      <circle cx="30" cy="30" r="30" fill="#242428" stroke="#C6FF00" stroke-width="2.5"/>
+      <!-- Shirt / Collar -->
+      <path d="M 10 52 C 10 40 20 36 30 36 C 40 36 50 40 50 52 Z" fill="#333338"/>
+      <polygon points="26,36 34,36 31,44 29,44" fill="#C6FF00"/>
+      <!-- Head -->
+      <circle cx="30" cy="24" r="11" fill="#E2A970"/>
+      <!-- Browcyl Green Cap -->
+      <path d="M 18 20 C 18 12 23 11 30 11 C 37 11 42 12 42 20 Z" fill="#C6FF00"/>
+      <path d="M 23 20 L 42 20" stroke="#18181B" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- Online Green Status Badge -->
+      <circle cx="50" cy="50" r="6" fill="#10B981" stroke="#18181B" stroke-width="2"/>
+    </g>
+
+    <!-- Name & ID Badge -->
+    <text x="112" y="142" font-family="Inter, -apple-system, sans-serif" font-size="17" font-weight="800" fill="#FFFFFF">Ardiansyah Pratama</text>
+    <text x="112" y="159" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#C6FF00">ID: BRW-KRR-042</text>
+    <text x="112" y="176" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#A1A1AA">Cabang Pettarani • Pusat Pengantaran</text>
+
+    <!-- Edit Profile Action Button -->
+    <g id="BtnUbahProfil" transform="translate(285, 120)">
+      <rect width="72" height="28" rx="14" fill="#27272A" stroke="#3F3F46" stroke-width="1.2"/>
+      <path d="M 12 18 L 15 18 L 22 11 L 19 8 L 12 15 Z M 21 7 L 23 9" stroke="#C6FF00" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <text x="29" y="18" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">Ubah</text>
+    </g>
+
+    <!-- Mini Metric Pills Row -->
+    <rect x="36" y="198" width="321" height="64" rx="14" fill="#232326"/>
+
+    <!-- Metric 1: Rating -->
+    <g transform="translate(54, 210)">
+      <text x="0" y="14" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#A1A1AA">Rating Kurir</text>
+      <text x="0" y="38" font-family="Inter, -apple-system, sans-serif" font-size="17" font-weight="900" fill="#C6FF00">4.95 ★</text>
+    </g>
+
+    <line x1="152" y1="212" x2="152" y2="250" stroke="#3F3F46" stroke-width="1.2"/>
+
+    <!-- Metric 2: Deliveries -->
+    <g transform="translate(168, 210)">
+      <text x="0" y="14" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#A1A1AA">Total Antar</text>
+      <text x="0" y="38" font-family="Inter, -apple-system, sans-serif" font-size="17" font-weight="900" fill="#FFFFFF">1.240 Boks</text>
+    </g>
+
+    <line x1="264" y1="212" x2="264" y2="250" stroke="#3F3F46" stroke-width="1.2"/>
+
+    <!-- Metric 3: Masa Kerja -->
+    <g transform="translate(280, 210)">
+      <text x="0" y="14" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#A1A1AA">Pengalaman</text>
+      <text x="0" y="38" font-family="Inter, -apple-system, sans-serif" font-size="17" font-weight="900" fill="#C6FF00">5 Tahun</text>
+    </g>
+  </g>
+
+  <!-- Section: Wilayah Operasional & Shift Dinas -->
+  <g id="OperationalCoverageCard" transform="translate(20, 292)">
+    <rect width="353" height="136" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+
+    <text x="18" y="28" font-family="Inter, -apple-system, sans-serif" font-size="12.5" font-weight="800" fill="#18181B">WILAYAH OPERASIONAL &amp; SHIFT</text>
+
+    <!-- Row 1: Wilayah Pengantaran Utama -->
+    <g transform="translate(18, 42)">
+      <rect width="32" height="32" rx="10" fill="#F1F5F9"/>
+      <!-- Map Pin Icon -->
+      <path d="M 16 8 C 12.7 8 10 10.7 10 14 C 10 18.5 16 25 16 25 C 16 25 22 18.5 22 14 C 22 10.7 19.3 8 16 8 Z" stroke="#18181B" stroke-width="1.5" fill="none"/>
+      <circle cx="16" cy="14" r="2.5" fill="#18181B"/>
+      <text x="42" y="14" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#18181B">Makassar Timur &amp; Sudiang</text>
+      <text x="42" y="27" font-family="Inter, -apple-system, sans-serif" font-size="10.5" font-weight="500" fill="#64748B">Hub Pettarani • Outlet Antang • Biringkanaya</text>
+    </g>
+
+    <line x1="18" y1="86" x2="335" y2="86" stroke="#F1F5F9" stroke-width="1.5"/>
+
+    <!-- Row 2: Shift Kerja & Tas Logistik -->
+    <g transform="translate(18, 96)">
+      <rect width="32" height="32" rx="10" fill="#ECFDF5"/>
+      <!-- Clock Icon -->
+      <circle cx="16" cy="16" r="8" stroke="#047857" stroke-width="1.5" fill="none"/>
+      <path d="M 16 12 V 16 L 19 18" stroke="#047857" stroke-width="1.5" stroke-linecap="round"/>
+      <text x="42" y="14" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#18181B">Shift Siang (10:00 - 18:00 WITA)</text>
+      <text x="42" y="27" font-family="Inter, -apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#047857">Tas Thermal #THM-08 • Status On-Duty</text>
+    </g>
+  </g>
+
+  <!-- Section: SOP Pengantaran (Clean Rounded Emerald Checkmarks) -->
+  <g id="SopComplianceCard" transform="translate(20, 440)">
+    <rect width="353" height="154" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+
+    <text x="18" y="28" font-family="Inter, -apple-system, sans-serif" font-size="12.5" font-weight="800" fill="#18181B">KEPATUHAN SOP BROWCYL MAKASSAR</text>
+
+    <!-- SOP Item 1 -->
+    <g transform="translate(18, 44)">
+      <circle cx="10" cy="10" r="10" fill="#ECFDF5"/>
+      <path d="M 6 10 L 9 13 L 14 7" stroke="#047857" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="28" y="14" font-family="Inter, -apple-system, sans-serif" font-size="11.5" font-weight="700" fill="#18181B">Muat LIFO Bagasi Motor</text>
+      <text x="28" y="27" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="500" fill="#64748B">Stop pertama dimuat di posisi paling atas bagasi.</text>
+    </g>
+
+    <!-- SOP Item 2 -->
+    <g transform="translate(18, 80)">
+      <circle cx="10" cy="10" r="10" fill="#ECFDF5"/>
+      <path d="M 6 10 L 9 13 L 14 7" stroke="#047857" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="28" y="14" font-family="Inter, -apple-system, sans-serif" font-size="11.5" font-weight="700" fill="#18181B">Suhu Kemasan &amp; Segel Utuh</text>
+      <text x="28" y="27" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="500" fill="#64748B">Suhu bagasi stabil 24°C, lakban segel kue tidak koyak.</text>
+    </g>
+
+    <!-- SOP Item 3 -->
+    <g transform="translate(18, 116)">
+      <circle cx="10" cy="10" r="10" fill="#ECFDF5"/>
+      <path d="M 6 10 L 9 13 L 14 7" stroke="#047857" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="28" y="14" font-family="Inter, -apple-system, sans-serif" font-size="11.5" font-weight="700" fill="#18181B">Setor Kasir Tunai COD Selesai Rute</text>
+      <text x="28" y="27" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="500" fill="#64748B">Uang fisik diserahkan tepat waktu di Hub Pettarani.</text>
+    </g>
+  </g>
+
+  <!-- Secondary Actions: Hubungi Hub & Keluar -->
+  <g id="AccountActions" transform="translate(20, 606)">
+    <!-- Contact Hub Coordinator -->
+    <rect width="170" height="46" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+    <g transform="translate(32, 14)">
+      <path d="M 2 4 C 2 2.9 2.9 2 4 2 L 6.5 2 C 7.2 2 7.7 2.4 7.9 3 L 8.8 5.6 C 9 6.2 8.8 6.9 8.3 7.3 L 7 8.3 C 7.9 10.3 9.7 12.1 11.7 13 L 12.7 11.7 C 13.1 11.2 13.8 11 14.4 11.2 L 17 12.1 C 17.6 12.3 18 12.8 18 13.5 L 18 16 C 18 17.1 17.1 18 16 18 C 8.3 18 2 11.7 2 4 Z" fill="#18181B"/>
+    </g>
+    <text x="58" y="28" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#18181B">Hubungi Hub</text>
+
+    <!-- Logout Button -->
+    <g transform="translate(183, 0)">
+      <rect width="170" height="46" rx="14" fill="#FEF2F2" stroke="#FEE2E2" stroke-width="1.2"/>
+      <g transform="translate(36, 14)">
+        <path d="M 9 3 H 4 C 2.9 3 2 3.9 2 5 V 15 C 2 16.1 2.9 17 4 17 H 9" stroke="#EF4444" stroke-width="1.6" stroke-linecap="round"/>
+        <path d="M 12 14 L 16 10 L 12 6 M 16 10 H 6" stroke="#EF4444" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <text x="62" y="28" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="800" fill="#EF4444">Keluar Akun</text>
+    </g>
+  </g>
+
+  <!-- Floating Ergonomic Navigation Dock (Tab 4: Profil ACTIVE) -->
+  <g id="FloatingNavDock">
+    <rect x="71" y="694" width="250" height="50" rx="25" fill="#18181B"/>
+
+    <!-- Tab 1: Vector Home Icon (Inactive) -->
+    <g transform="translate(90, 712)">
+      <path d="M 2 7 L 7 2 L 12 7 V 13 H 9 V 9 H 5 V 13 H 2 Z" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g>
+
+    <!-- Tab 2: Vector Map Icon (Inactive) -->
+    <g transform="translate(136, 712)">
+      <path d="M 1 3 L 5 1 L 10 3 L 14 1 V 12 L 10 14 L 5 12 L 1 14 Z M 5 1 V 12 M 10 3 V 14" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g>
+
+    <!-- Tab 3: Vector Analytics Icon (Inactive) -->
+    <g transform="translate(184, 712)">
+      <rect x="1" y="7" width="2.8" height="7" rx="1" fill="#FFFFFF"/>
+      <rect x="5.5" y="3" width="2.8" height="11" rx="1" fill="#FFFFFF"/>
+      <rect x="10" y="0" width="2.8" height="14" rx="1" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Tab 4: Active Profile Capsule -->
+    <rect x="228" y="700" width="86" height="38" rx="19" fill="#C6FF00"/>
+    <!-- Vector User Icon (Active in Capsule) -->
+    <g transform="translate(240, 712)">
+      <circle cx="7" cy="4" r="3.5" fill="#18181B"/>
+      <path d="M 1 14 C 1 10.5 3.5 9 7 9 C 10.5 9 13 10.5 13 14" fill="#18181B"/>
+    </g>
+    <text x="262" y="724" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="900" fill="#18181B">Profil</text>
+  </g>
+
+  <!-- Bottom Home Indicator Pill -->
+  <rect x="126" y="834" width="140" height="5" rx="2.5" fill="#18181B"/>
+</svg>

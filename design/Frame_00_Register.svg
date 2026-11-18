@@ -1,0 +1,157 @@
+<svg width="393" height="852" viewBox="0 0 393 852" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Device Frame & Canvas Background (Clean Light Gray) -->
+  <rect width="393" height="852" rx="44" fill="#F8FAFC"/>
+  <rect x="1.5" y="1.5" width="390" height="849" rx="42.5" stroke="#18181B" stroke-width="3"/>
+
+  <!-- Status Bar (Dark on Light) -->
+  <text x="32" y="32" font-family="Inter, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#18181B">09:41</text>
+  <rect x="141" y="12" width="112" height="28" rx="14" fill="#18181B"/>
+  <circle cx="294" cy="26" r="3" fill="#10B981"/>
+  <text x="302" y="30" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#10B981">GPS</text>
+  <text x="326" y="30" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#18181B">5G</text>
+  <rect x="348" y="21" width="22" height="12" rx="3.5" stroke="#18181B" stroke-width="1.5"/>
+  <rect x="350.5" y="23.5" width="13" height="7" rx="1.5" fill="#18181B"/>
+  <path d="M 371 25.5 C 371.6 25.8 372 26.4 372 27 C 372 27.6 371.6 28.2 371 28.5" stroke="#18181B" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Top Navigation Header -->
+  <g id="TopNav">
+    <!-- Back Button Circle -->
+    <circle cx="42" cy="74" r="20" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+    <path d="M 45 68 L 39 74 L 45 80" stroke="#18181B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Role Badge -->
+    <rect x="74" y="64" width="146" height="20" rx="10" fill="#E2E8F0"/>
+    <text x="147" y="78" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="9.5" font-weight="800" fill="#334155">REGISTRASI KURIR BARU</text>
+
+    <!-- KurirGO Brand Badge (Top Right) -->
+    <g id="BrandBadge" transform="translate(262, 57)">
+      <rect width="111" height="34" rx="17" fill="#18181B" stroke="#27272A" stroke-width="1.2"/>
+      <g transform="translate(10, 8)">
+        <polygon points="9,1 17,5 9,9 1,5" fill="#3F3F46"/>
+        <polygon points="1,5 9,9 9,17 1,13" fill="#27272A"/>
+        <polygon points="9,9 17,5 17,13 9,17" fill="#18181B"/>
+        <polygon points="4,4 7,3 7,15 4,16" fill="#C6FF00"/>
+        <polygon points="7,8 14,2 16,4 8,10" fill="#C6FF00"/>
+        <polygon points="8,9 15,15 13,17 6,11" fill="#C6FF00"/>
+      </g>
+      <text x="34" y="22" font-family="Inter, -apple-system, sans-serif" font-size="13.5" font-weight="900" fill="#FFFFFF" letter-spacing="-0.3">Kurir<tspan fill="#C6FF00" font-style="italic">GO</tspan></text>
+    </g>
+
+    <!-- Page Title -->
+    <text x="24" y="122" font-family="Inter, -apple-system, sans-serif" font-size="22" font-weight="900" fill="#18181B">Pendaftaran Akun Kurir</text>
+    <text x="24" y="142" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#64748B">Armada Resmi KurirGO • Browcyl Makassar</text>
+  </g>
+
+  <!-- Form Fields Area Container -->
+  <g id="RegisterForm">
+    <!-- Field 1: Nama Lengkap Kurir -->
+    <g id="Field_FullName">
+      <text x="24" y="174" font-family="Inter, -apple-system, sans-serif" font-size="11.5" font-weight="700" fill="#18181B">Nama Lengkap Kurir</text>
+      <rect x="20" y="184" width="353" height="46" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+      <g transform="translate(34, 197)">
+        <circle cx="8" cy="5" r="4" stroke="#64748B" stroke-width="1.6" fill="none"/>
+        <path d="M 2 16 C 2 12.5 4.5 10.5 8 10.5 C 11.5 10.5 14 12.5 14 16" stroke="#64748B" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+      </g>
+      <text x="60" y="213" font-family="Inter, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#18181B">Ardiansyah Pratama</text>
+    </g>
+
+    <!-- Field 2: Username Akun (Option A: Buat Sendiri) -->
+    <g id="Field_Username">
+      <text x="24" y="248" font-family="Inter, -apple-system, sans-serif" font-size="11.5" font-weight="700" fill="#18181B">Username Akun (Untuk Login)</text>
+      <!-- Focused/Valid State with Green Accent -->
+      <rect x="20" y="258" width="353" height="46" rx="14" fill="#FFFFFF" stroke="#10B981" stroke-width="1.8"/>
+      <!-- At-sign / User Tag Vector -->
+      <g transform="translate(34, 271)">
+        <circle cx="8" cy="8" r="6" stroke="#10B981" stroke-width="1.5" fill="none"/>
+        <path d="M 8 5 C 6.5 5 5.5 6.2 5.5 8 C 5.5 9.8 6.5 11 8 11 C 9.5 11 10.5 9.8 10.5 8 V 5" stroke="#10B981" stroke-width="1.5" stroke-linecap="round"/>
+      </g>
+      <text x="60" y="287" font-family="Inter, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#18181B">ardiansyah</text>
+      <!-- Username Available Badge -->
+      <rect x="274" y="268" width="88" height="26" rx="8" fill="#ECFDF5"/>
+      <circle cx="286" cy="281" r="3.5" fill="#10B981"/>
+      <text x="295" y="285" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#047857">Tersedia</text>
+    </g>
+
+    <!-- Field 3 & 4: PIN Akses & Konfirmasi PIN (2 Kolom Sejajar) -->
+    <g id="Fields_PIN">
+      <!-- Kolom Kiri: PIN Baru -->
+      <g transform="translate(20, 322)">
+        <text x="4" y="0" font-family="Inter, -apple-system, sans-serif" font-size="11.5" font-weight="700" fill="#18181B">PIN Akses (4-6 Digit)</text>
+        <rect x="0" y="10" width="170" height="46" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+        <!-- Lock Vector -->
+        <g transform="translate(14, 23)">
+          <rect x="2" y="7" width="12" height="9" rx="2.5" stroke="#64748B" stroke-width="1.5" fill="none"/>
+          <path d="M 5 7 V 4.5 C 5 2.8 6.3 1.5 8 1.5 C 9.7 1.5 11 2.8 11 4.5 V 7" stroke="#64748B" stroke-width="1.5" stroke-linecap="round"/>
+        </g>
+        <circle cx="48" cy="33" r="4" fill="#18181B"/>
+        <circle cx="62" cy="33" r="4" fill="#18181B"/>
+        <circle cx="76" cy="33" r="4" fill="#18181B"/>
+        <circle cx="90" cy="33" r="4" fill="#18181B"/>
+      </g>
+
+      <!-- Kolom Kanan: Konfirmasi PIN -->
+      <g transform="translate(203, 322)">
+        <text x="4" y="0" font-family="Inter, -apple-system, sans-serif" font-size="11.5" font-weight="700" fill="#18181B">Konfirmasi PIN</text>
+        <rect x="0" y="10" width="170" height="46" rx="14" fill="#FFFFFF" stroke="#10B981" stroke-width="1.5"/>
+        <g transform="translate(14, 23)">
+          <rect x="2" y="7" width="12" height="9" rx="2.5" stroke="#10B981" stroke-width="1.5" fill="none"/>
+          <path d="M 5 7 V 4.5 C 5 2.8 6.3 1.5 8 1.5 C 9.7 1.5 11 2.8 11 4.5 V 7" stroke="#10B981" stroke-width="1.5" stroke-linecap="round"/>
+        </g>
+        <circle cx="48" cy="33" r="4" fill="#18181B"/>
+        <circle cx="62" cy="33" r="4" fill="#18181B"/>
+        <circle cx="76" cy="33" r="4" fill="#18181B"/>
+        <circle cx="90" cy="33" r="4" fill="#18181B"/>
+        <!-- Match Checkmark -->
+        <circle cx="148" cy="33" r="8" fill="#10B981"/>
+        <path d="M 144 33 L 147 36 L 152 30" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </g>
+
+    <!-- Field 5: Pangkalan Pengantaran Tunggal (Cabang Pettarani) -->
+    <g id="Field_HubPettarani">
+      <text x="24" y="402" font-family="Inter, -apple-system, sans-serif" font-size="11.5" font-weight="700" fill="#18181B">Pangkalan Pengantaran <tspan fill="#047857" font-weight="700">(Pusat Tunggal)</tspan></text>
+      <rect x="20" y="412" width="353" height="40" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.2"/>
+      <circle cx="38" cy="432" r="4" fill="#C6FF00"/>
+      <text x="50" y="436" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="800" fill="#18181B">Cabang Pettarani <tspan fill="#64748B" font-weight="500">• Pusat Pengantaran Browcyl</tspan></text>
+      <!-- Lock Icon -->
+      <g transform="translate(346, 424)">
+        <rect x="1" y="5" width="10" height="8" rx="2" fill="#94A3B8"/>
+        <path d="M 3.5 5 V 3.5 C 3.5 2 4.5 1 6 1 C 7.5 1 8.5 2 8.5 3.5 V 5" stroke="#94A3B8" stroke-width="1.2" fill="none"/>
+      </g>
+    </g>
+
+    <!-- Field 6: Nomor WhatsApp / Handphone (Opsional untuk OTP) -->
+    <g id="Field_WhatsAppOptional">
+      <text x="24" y="472" font-family="Inter, -apple-system, sans-serif" font-size="11.5" font-weight="700" fill="#18181B">No. WhatsApp / HP <tspan fill="#64748B" font-weight="500">(Opsional - untuk OTP &amp; Darurat)</tspan></text>
+      <rect x="20" y="482" width="353" height="46" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+      <!-- Phone Vector -->
+      <g transform="translate(34, 495)">
+        <rect x="3" y="1" width="11" height="18" rx="2.5" stroke="#64748B" stroke-width="1.6" fill="none"/>
+        <circle cx="8.5" cy="15" r="1" fill="#64748B"/>
+      </g>
+      <text x="60" y="511" font-family="Inter, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#64748B">0812-4567-8901 (Bisa dikosongkan)</text>
+    </g>
+
+    <!-- SOP Agreement Checkbox -->
+    <g id="SOPCheckbox">
+      <rect x="22" y="554" width="20" height="20" rx="6" fill="#18181B"/>
+      <path d="M 27 564 L 30 567 L 38 558" stroke="#C6FF00" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="50" y="564" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#18181B">Saya menyetujui SOP Higienitas &amp; Pengantaran Browcyl</text>
+      <text x="50" y="578" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="500" fill="#64748B">Penyusunan boks bagasi LIFO &amp; komitmen penjagaan kualitas kue.</text>
+    </g>
+  </g>
+
+  <!-- Bottom CTA Container -->
+  <g id="BottomAction">
+    <!-- Submit Button (Electric Lime Full Pill 54px) -->
+    <rect x="20" y="640" width="353" height="54" rx="27" fill="#C6FF00"/>
+    <text x="196" y="673" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="15" font-weight="800" fill="#18181B">Daftar Akun KurirGO</text>
+
+    <!-- Switch Back to Login -->
+    <g transform="translate(196, 720)">
+      <text text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="12.5" fill="#64748B">
+        Sudah punya akun kurir? <tspan font-weight="800" fill="#18181B">Masuk di sini</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

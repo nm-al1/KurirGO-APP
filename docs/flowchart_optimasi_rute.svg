@@ -1,0 +1,260 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 1680" width="960" height="1680" style="background-color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- Arrow marker -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#334155" />
+    </marker>
+    <!-- Drop shadows -->
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <style>
+    .title { font-size: 20px; font-weight: 800; fill: #0f172a; text-anchor: middle; }
+    .subtitle { font-size: 13px; font-weight: 500; fill: #64748b; text-anchor: middle; }
+    .node-text { font-size: 13px; fill: #1e293b; text-anchor: middle; font-weight: 500; }
+    .node-bold { font-weight: 700; }
+    .edge-label { font-size: 11px; font-weight: 700; fill: #475569; }
+    .line { stroke: #475569; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+    .line-noarrow { stroke: #475569; stroke-width: 2; fill: none; }
+  </style>
+
+  <!-- Header -->
+  <text x="480" y="42" class="title">FLOWCHART: ALGORITHM OptimasiRuteBrowcyl</text>
+  <text x="480" y="66" class="subtitle">Filter Kelayakan Pesanan &amp; Optimasi Rute Greedy (Nearest Neighbor TSP)</text>
+
+  <!-- 1. Start Node -->
+  <g filter="url(#shadow)">
+    <rect x="360" y="95" width="240" height="46" rx="23" fill="#E2F952" stroke="#18181B" stroke-width="2.5"/>
+    <text x="480" y="123" class="node-text node-bold" fill="#18181B">MULAI (BEGIN)</text>
+  </g>
+
+  <!-- Arrow Start -> Input -->
+  <path d="M 480 141 L 480 170" class="line"/>
+
+  <!-- 2. Input Node (Parallelogram) -->
+  <g filter="url(#shadow)">
+    <polygon points="340,170 640,170 600,240 300,240" fill="#E0F2FE" stroke="#0284C7" stroke-width="2"/>
+    <text x="470" y="194" class="node-text node-bold" fill="#0369A1">INPUT:</text>
+    <text x="470" y="213" class="node-text" fill="#0369A1">Depot S, DaftarPesanan L[1..N]</text>
+    <text x="470" y="230" class="node-text" fill="#0369A1">MatriksBobot W[0..N][0..N]</text>
+  </g>
+
+  <!-- Arrow Input -> Init Filter -->
+  <path d="M 470 240 L 470 270" class="line"/>
+
+  <!-- 3. Inisialisasi Filter -->
+  <g filter="url(#shadow)">
+    <rect x="340" y="270" width="260" height="66" rx="8" fill="#F8FAFC" stroke="#475569" stroke-width="1.8"/>
+    <text x="470" y="293" class="node-text node-bold">Inisialisasi Filter Pesanan:</text>
+    <text x="470" y="312" class="node-text">TujuanValid = [], TotalBox = 0</text>
+    <text x="470" y="328" class="node-text">i = 1</text>
+  </g>
+
+  <!-- Arrow Init Filter -> Loop Filter -->
+  <path d="M 470 336 L 470 370" class="line"/>
+
+  <!-- 4. Loop Filter Decision (i <= N) -->
+  <g filter="url(#shadow)">
+    <polygon points="470,370 560,410 470,450 380,410" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+    <text x="470" y="415" class="node-text node-bold" fill="#92400E">i &lt;= N ?</text>
+  </g>
+
+  <!-- Arrow Loop Filter -> Check Syarat (Ya) -->
+  <path d="M 470 450 L 470 490" class="line"/>
+  <text x="478" y="475" class="edge-label" fill="#15803D">Ya</text>
+
+  <!-- 5. Decision: Check Syarat -->
+  <g filter="url(#shadow)">
+    <polygon points="470,490 670,545 470,600 270,545" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+    <text x="470" y="535" class="node-text node-bold" fill="#92400E">(L[i].Nominal &gt;= 100rb OR L[i].JumlahBox &gt;= 3)</text>
+    <text x="470" y="555" class="node-text node-bold" fill="#92400E">AND (L[i].JarakDepot &gt;= 10 KM) ?</text>
+  </g>
+
+  <!-- Condition Syarat: Ya -> Tambah ke TujuanValid -->
+  <path d="M 470 600 L 470 640" class="line"/>
+  <text x="478" y="625" class="edge-label" fill="#15803D">Ya (Lolos)</text>
+
+  <!-- 6. Proses Tambah -->
+  <g filter="url(#shadow)">
+    <rect x="330" y="640" width="280" height="52" rx="8" fill="#F8FAFC" stroke="#475569" stroke-width="1.8"/>
+    <text x="470" y="662" class="node-text">Tambahkan L[i] ke TujuanValid</text>
+    <text x="470" y="680" class="node-text">TotalBox = TotalBox + L[i].JumlahBox</text>
+  </g>
+
+  <!-- Arrow Tambah -> Increment i -->
+  <path d="M 470 692 L 470 725" class="line"/>
+
+  <!-- Condition Syarat: Tidak -> Increment i (Bypass) -->
+  <path d="M 270 545 L 230 545 L 230 745 L 370 745" class="line"/>
+  <text x="238" y="538" class="edge-label" fill="#DC2626">Tidak</text>
+
+  <!-- 7. Increment i -->
+  <g filter="url(#shadow)">
+    <rect x="370" y="725" width="200" height="40" rx="8" fill="#F8FAFC" stroke="#475569" stroke-width="1.8"/>
+    <text x="470" y="750" class="node-text">i = i + 1</text>
+  </g>
+
+  <!-- Loop back from Increment i to Loop Filter -->
+  <path d="M 570 745 L 700 745 L 700 410 L 560 410" class="line"/>
+
+  <!-- Loop Filter -> Selesai Filter (Tidak) -->
+  <path d="M 380 410 L 140 410 L 140 815 L 340 815" class="line"/>
+  <text x="148" y="402" class="edge-label" fill="#DC2626">Tidak (Selesai Filter)</text>
+
+  <!-- 8. Hitung Panjang TujuanValid -->
+  <g filter="url(#shadow)">
+    <rect x="340" y="795" width="260" height="42" rx="8" fill="#F8FAFC" stroke="#475569" stroke-width="1.8"/>
+    <text x="470" y="821" class="node-text">JumlahValid = panjang(TujuanValid)</text>
+  </g>
+
+  <!-- Arrow Hitung -> Check Valid Kosong -->
+  <path d="M 470 837 L 470 870" class="line"/>
+
+  <!-- 9. Decision: JumlahValid == 0 ? -->
+  <g filter="url(#shadow)">
+    <polygon points="470,870 575,910 470,950 365,910" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+    <text x="470" y="915" class="node-text node-bold" fill="#92400E">JumlahValid == 0 ?</text>
+  </g>
+
+  <!-- Branch Kosong (Ya) -> Stop -->
+  <path d="M 575 910 L 720 910" class="line"/>
+  <text x="630" y="902" class="edge-label" fill="#DC2626">Ya (Kosong)</text>
+
+  <!-- Output Error & STOP -->
+  <g filter="url(#shadow)">
+    <polygon points="730,885 910,885 890,935 710,935" fill="#FEE2E2" stroke="#DC2626" stroke-width="1.8"/>
+    <text x="810" y="905" class="node-text" fill="#991B1B" font-size="11">OUTPUT: "Tidak ada pesanan</text>
+    <text x="810" y="921" class="node-text" fill="#991B1B" font-size="11">memenuhi syarat"</text>
+  </g>
+  <path d="M 810 935 L 810 965" class="line"/>
+  <g filter="url(#shadow)">
+    <rect x="740" y="965" width="140" height="38" rx="19" fill="#FCA5A5" stroke="#DC2626" stroke-width="2"/>
+    <text x="810" y="989" class="node-text node-bold" fill="#7F1D1D">STOP</text>
+  </g>
+
+  <!-- Branch Tidak Kosong -> Inisialisasi TSP -->
+  <path d="M 470 950 L 470 990" class="line"/>
+  <text x="478" y="975" class="edge-label" fill="#15803D">Tidak</text>
+
+  <!-- 10. Inisialisasi TSP (Nearest Neighbor) -->
+  <g filter="url(#shadow)">
+    <rect x="300" y="990" width="340" height="82" rx="8" fill="#F8FAFC" stroke="#475569" stroke-width="1.8"/>
+    <text x="470" y="1013" class="node-text node-bold">Inisialisasi Greedy TSP (Nearest Neighbor):</text>
+    <text x="470" y="1031" class="node-text">Dikunjungi[1..JumlahValid] = FALSE</text>
+    <text x="470" y="1049" class="node-text">Tambahkan Depot S ke RuteOptimal R</text>
+    <text x="470" y="1065" class="node-text">PosisiSaatIni = 0, T = 0, langkah = 1</text>
+  </g>
+
+  <!-- Arrow Init TSP -> Loop Langkah -->
+  <path d="M 470 1072 L 470 1105" class="line"/>
+
+  <!-- 11. Loop Langkah Decision -->
+  <g filter="url(#shadow)">
+    <polygon points="470,1105 600,1145 470,1185 340,1145" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+    <text x="470" y="1150" class="node-text node-bold" fill="#92400E">langkah &lt;= JumlahValid ?</text>
+  </g>
+
+  <!-- Loop Langkah (Ya) -> Inisialisasi Pencarian Min -->
+  <path d="M 470 1185 L 470 1220" class="line"/>
+  <text x="478" y="1205" class="edge-label" fill="#15803D">Ya</text>
+
+  <!-- 12. Inisialisasi Pencarian Min -->
+  <g filter="url(#shadow)">
+    <rect x="330" y="1220" width="280" height="52" rx="8" fill="#F8FAFC" stroke="#475569" stroke-width="1.8"/>
+    <text x="470" y="1242" class="node-text">BobotMin = TAK_HINGGA, IndeksTerdekat = -1</text>
+    <text x="470" y="1260" class="node-text">j = 1</text>
+  </g>
+
+  <!-- Arrow -> Loop j -->
+  <path d="M 470 1272 L 470 1300" class="line"/>
+
+  <!-- 13. Loop j Decision -->
+  <g filter="url(#shadow)">
+    <polygon points="470,1300 580,1335 470,1370 360,1335" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+    <text x="470" y="1340" class="node-text node-bold" fill="#92400E">j &lt;= JumlahValid ?</text>
+  </g>
+
+  <!-- Loop j (Ya) -> Check Dikunjungi -->
+  <path d="M 470 1370 L 470 1400" class="line"/>
+  <text x="478" y="1388" class="edge-label" fill="#15803D">Ya</text>
+
+  <!-- 14. Check Dikunjungi == FALSE -->
+  <g filter="url(#shadow)">
+    <polygon points="470,1400 610,1435 470,1470 330,1435" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+    <text x="470" y="1440" class="node-text node-bold" fill="#92400E">Dikunjungi[j] == FALSE ?</text>
+  </g>
+
+  <!-- Check Dikunjungi (Ya) -> Check Bobot < BobotMin -->
+  <path d="M 470 1470 L 470 1500" class="line"/>
+  <text x="478" y="1488" class="edge-label" fill="#15803D">Ya</text>
+
+  <!-- 15. Check Bobot < BobotMin -->
+  <g filter="url(#shadow)">
+    <polygon points="470,1500 620,1535 470,1570 320,1535" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+    <text x="470" y="1540" class="node-text node-bold" fill="#92400E">W[PosisiSaatIni][j] &lt; BobotMin ?</text>
+  </g>
+
+  <!-- Check Bobot (Ya) -> Update Min -->
+  <path d="M 470 1570 L 470 1600" class="line"/>
+  <text x="478" y="1588" class="edge-label" fill="#15803D">Ya</text>
+
+  <!-- 16. Update Min -->
+  <g filter="url(#shadow)">
+    <rect x="320" y="1600" width="300" height="45" rx="8" fill="#F8FAFC" stroke="#475569" stroke-width="1.8"/>
+    <text x="470" y="1620" class="node-text">BobotMin = W[PosisiSaatIni][j]</text>
+    <text x="470" y="1636" class="node-text">IndeksTerdekat = j</text>
+  </g>
+
+  <!-- Increment j node -->
+  <path d="M 470 1645 L 470 1665 L 260 1665 L 260 1335 L 360 1335" class="line"/>
+  <text x="270" y="1658" class="edge-label" fill="#475569">j = j + 1</text>
+
+  <!-- Bypass from Check Dikunjungi (Tidak) & Check Bobot (Tidak) to Increment j -->
+  <path d="M 330 1435 L 285 1435 L 285 1665" class="line-noarrow"/>
+  <text x="292" y="1428" class="edge-label" fill="#DC2626">Tidak</text>
+  <path d="M 320 1535 L 285 1535" class="line-noarrow"/>
+  <text x="292" y="1528" class="edge-label" fill="#DC2626">Tidak</text>
+
+  <!-- Loop j Selesai (Tidak) -> Commit Langkah -->
+  <!-- Let's branch right from loop j -->
+  <path d="M 580 1335 L 720 1335 L 720 1190" class="line"/>
+  <text x="610" y="1325" class="edge-label" fill="#DC2626">Tidak (j &gt; JumlahValid)</text>
+
+  <!-- 17. Commit Langkah -->
+  <g filter="url(#shadow)">
+    <rect x="630" y="1090" width="310" height="95" rx="8" fill="#F8FAFC" stroke="#475569" stroke-width="1.8"/>
+    <text x="785" y="1112" class="node-text node-bold">Commit Outlet Terpilih:</text>
+    <text x="785" y="1130" class="node-text">Dikunjungi[IndeksTerdekat] = TRUE</text>
+    <text x="785" y="1147" class="node-text">Tambah TujuanValid[..].Alamat ke R</text>
+    <text x="785" y="1164" class="node-text">T = T + BobotMin; Posisi = IndeksTerdekat</text>
+    <text x="785" y="1179" class="node-text">langkah = langkah + 1</text>
+  </g>
+
+  <!-- Loop back from Commit to Loop Langkah -->
+  <path d="M 785 1090 L 785 1045 L 610 1045 L 610 1120 L 595 1130" class="line"/>
+
+  <!-- Loop Langkah (Tidak) -> Output Final -->
+  <path d="M 340 1145 L 140 1145 L 140 1200" class="line"/>
+  <text x="150" y="1138" class="edge-label" fill="#DC2626">Tidak (Semua Terkunjungi)</text>
+
+  <!-- 18. Output Final (Parallelogram) -->
+  <g filter="url(#shadow)">
+    <polygon points="40,1200 270,1200 240,1285 10,1285" fill="#E0F2FE" stroke="#0284C7" stroke-width="2"/>
+    <text x="135" y="1225" class="node-text node-bold" fill="#0369A1">OUTPUT:</text>
+    <text x="135" y="1244" class="node-text" fill="#0369A1">Urutan Rute Optimal (R)</text>
+    <text x="135" y="1261" class="node-text" fill="#0369A1">Total Bobot (T)</text>
+    <text x="135" y="1277" class="node-text" fill="#0369A1">Total Box (TotalBox)</text>
+  </g>
+
+  <!-- Arrow Output Final -> Selesai -->
+  <path d="M 135 1285 L 135 1330" class="line"/>
+
+  <!-- 19. Selesai (END) -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="1330" width="190" height="46" rx="23" fill="#E2F952" stroke="#18181B" stroke-width="2.5"/>
+    <text x="135" y="1358" class="node-text node-bold" fill="#18181B">SELESAI (END)</text>
+  </g>
+
+</svg>

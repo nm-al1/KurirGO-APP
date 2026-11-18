@@ -1,0 +1,85 @@
+<svg width="393" height="852" viewBox="0 0 393 852" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Device Frame & Canvas Background -->
+  <rect width="393" height="852" rx="44" fill="#F1F5F9"/>
+  <rect x="1.5" y="1.5" width="390" height="849" rx="42.5" stroke="#18181B" stroke-width="3"/>
+
+  <!-- Live Map Grid & Road Canvas -->
+  <g id="LiveMapRoads">
+    <path d="M 0 320 L 393 270 M 110 0 L 140 852 M 280 0 L 260 852" stroke="#E2E8F0" stroke-width="12" stroke-linecap="round"/>
+    <path d="M 0 540 L 393 490 M 20 700 L 370 730" stroke="#E2E8F0" stroke-width="8" stroke-linecap="round"/>
+    <path d="M 180 180 L 393 150 M 0 100 L 220 140" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Active Turn-by-Turn GPS Navigation Line (Glowing Electric Lime) -->
+  <path d="M 80 500 L 150 370 L 300 270 L 324 176" fill="none" stroke="#C6FF00" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 80 500 L 150 370 L 300 270 L 324 176" fill="none" stroke="#C6FF00" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" opacity="0.3"/>
+
+  <!-- Destination Marker (House Pin) -->
+  <circle cx="324" cy="176" r="14" fill="#18181B" stroke="#C6FF00" stroke-width="2.5"/>
+  <path d="M 319 178 L 324 172 L 329 178 V 182 H 319 Z" fill="#C6FF00"/>
+
+  <!-- Courier Position GPS Dot (Pulse Ring) -->
+  <circle cx="80" cy="500" r="14" fill="#C6FF00" opacity="0.3"/>
+  <circle cx="80" cy="500" r="9" fill="#C6FF00" stroke="#FFFFFF" stroke-width="2.5"/>
+
+  <!-- GPS Recenter Button -->
+  <circle cx="340" cy="420" r="19" fill="#FFFFFF"/>
+  <circle cx="340" cy="420" r="8" fill="none" stroke="#18181B" stroke-width="2"/>
+  <circle cx="340" cy="420" r="3" fill="#18181B"/>
+
+  <!-- Status Bar (White Icons on Top Banner) -->
+  <text x="32" y="32" font-family="Inter, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#18181B">9:41</text>
+  <rect x="141" y="12" width="112" height="28" rx="14" fill="#18181B"/>
+  <text x="312" y="31" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#18181B">5G</text>
+  <rect x="338" y="21" width="22" height="12" rx="3.5" stroke="#18181B" stroke-width="1.5"/>
+  <rect x="340.5" y="23.5" width="14" height="7" rx="1.5" fill="#18181B"/>
+  <path d="M 361 25.5 C 361.6 25.8 362 26.4 362 27 C 362 27.6 361.6 28.2 361 28.5" stroke="#18181B" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Top Floating Turn Banner -->
+  <g id="TurnBanner">
+    <rect x="20" y="56" width="353" height="92" rx="20" fill="#18181B"/>
+    
+    <!-- Big Electric Lime Right-Turn Arrow -->
+    <path d="M 40 106 L 40 86 Q 40 76 50 76 L 68 76 M 60 68 L 70 76 L 60 84" fill="none" stroke="#C6FF00" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Target Badge -->
+    <text x="90" y="78" font-family="Inter, -apple-system, sans-serif" font-size="9" font-weight="700" fill="#A1A1AA">STOP #1 OF 2 (Pelanggan Antang)</text>
+    
+    <!-- Distance Text -->
+    <text x="90" y="106" font-family="Inter, -apple-system, sans-serif" font-size="24" font-weight="800" fill="#FFFFFF">500m</text>
+    
+    <!-- Turn Instruction -->
+    <text x="90" y="128" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#D4D4D8">Belok Kanan ke Jl. Antang Raya No. 45</text>
+  </g>
+
+  <!-- Bottom Floating Control Sheet -->
+  <g id="BottomControlSheet">
+    <rect x="0" y="580" width="393" height="272" rx="28" fill="#18181B"/>
+
+    <!-- Customer Row -->
+    <text x="24" y="618" font-family="Inter, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">Pelanggan Antang</text>
+    <text x="24" y="638" font-family="Inter, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#A1A1AA">(COD: Rp 150.000)</text>
+
+    <!-- Call Customer Button (Circle) -->
+    <circle cx="348" cy="626" r="20" fill="#27272A"/>
+    <!-- Phone Icon -->
+    <path d="M 343 621 C 342 622 342 624 343 626 C 344 628 346 630 348 631 C 350 632 352 632 353 631 L 354 630 C 355 629 355 628 354 627 L 352 625 C 351 624 350 624 349 625 L 348 626 C 347 626 346 625 345 624 C 344 623 344 622 344 621 L 345 620 C 346 619 346 618 345 617 L 343 615 C 342 614 341 614 340 615 Z" fill="#C6FF00"/>
+
+    <!-- Divider Line -->
+    <line x1="24" y1="664" x2="369" y2="664" stroke="#27272A" stroke-width="1"/>
+
+    <!-- COD Lunas Toggle Switch Row -->
+    <text x="24" y="698" font-family="Inter, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">COD Lunas</text>
+
+    <!-- Active iOS-Style Electric Lime Toggle -->
+    <rect x="320" y="682" width="50" height="30" rx="15" fill="#C6FF00"/>
+    <circle cx="355" cy="697" r="12" fill="#18181B"/>
+
+    <!-- Primary Bottom CTA Button -->
+    <g id="PrimaryCTA">
+      <rect x="20" y="760" width="353" height="54" rx="27" fill="#C6FF00"/>
+      <text x="196" y="793" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="15" font-weight="700" fill="#18181B">Selesaikan &amp; Lanjut Rute Berikutnya</text>
+    </g>
+  </g>
+</svg>
+

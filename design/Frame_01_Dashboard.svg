@@ -1,0 +1,199 @@
+<svg width="393" height="852" viewBox="0 0 393 852" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Device Frame & Canvas Background -->
+  <rect width="393" height="852" rx="44" fill="#F8FAFC"/>
+  <rect x="1.5" y="1.5" width="390" height="849" rx="42.5" stroke="#18181B" stroke-width="3"/>
+
+  <!-- Status Bar -->
+  <text x="32" y="32" font-family="Inter, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#18181B">09:41</text>
+  <!-- Dynamic Island -->
+  <rect x="141" y="12" width="112" height="28" rx="14" fill="#18181B"/>
+  <!-- Status Icons (5G, GPS Lock, Battery) -->
+  <circle cx="294" cy="26" r="3" fill="#10B981"/>
+  <text x="302" y="30" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#10B981">GPS</text>
+  <text x="326" y="30" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#18181B">5G</text>
+  <rect x="348" y="21" width="22" height="12" rx="3.5" stroke="#18181B" stroke-width="1.5"/>
+  <rect x="350.5" y="23.5" width="13" height="7" rx="1.5" fill="#18181B"/>
+  <path d="M 371 25.5 C 371.6 25.8 372 26.4 372 27 C 372 27.6 371.6 28.2 371 28.5" stroke="#18181B" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Courier Profile Header -->
+  <g id="CourierProfile">
+    <!-- Avatar Graphic (Realistic courier cap & shirt) -->
+    <circle cx="44" cy="78" r="24" fill="#18181B"/>
+    <path d="M 28 96 C 28 88 35 85 44 85 C 53 85 60 88 60 96 Z" fill="#27272A"/>
+    <circle cx="44" cy="73" r="9" fill="#E0A96D"/>
+    <!-- Browcyl Green Cap -->
+    <path d="M 35 70 C 35 64 39 63 44 63 C 49 63 53 64 53 70 Z" fill="#C6FF00"/>
+    <path d="M 39 69 L 53 69" stroke="#18181B" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Courier Info (Anti-Slop: Professional typography) -->
+    <text x="78" y="73" font-family="Inter, -apple-system, sans-serif" font-size="18" font-weight="800" fill="#18181B">Halo, Ardiansyah!</text>
+    <text x="78" y="90" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#64748B">Hub Pettarani • Makassar</text>
+    
+    <!-- Experience Badge (Clean Vector Box Icon, No Emoji) -->
+    <rect x="78" y="96" width="148" height="20" rx="10" fill="#E2E8F0"/>
+    <g transform="translate(86, 100)">
+      <polygon points="5,1 9,3 5,5 1,3" fill="#64748B"/>
+      <polygon points="1,3 5,5 5,9 1,7" fill="#475569"/>
+      <polygon points="5,5 9,3 9,7 5,9" fill="#334155"/>
+    </g>
+    <text x="100" y="110" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#334155">Kurir Browcyl (5 Thn)</text>
+
+    <!-- KurirGO Brand Badge (Top Right Header) -->
+    <g id="BrandBadge" transform="translate(262, 66)">
+      <rect width="111" height="34" rx="17" fill="#18181B" stroke="#27272A" stroke-width="1.2"/>
+      <g transform="translate(10, 8)">
+        <polygon points="9,1 17,5 9,9 1,5" fill="#3F3F46"/>
+        <polygon points="1,5 9,9 9,17 1,13" fill="#27272A"/>
+        <polygon points="9,9 17,5 17,13 9,17" fill="#18181B"/>
+        <polygon points="4,4 7,3 7,15 4,16" fill="#C6FF00"/>
+        <polygon points="7,8 14,2 16,4 8,10" fill="#C6FF00"/>
+        <polygon points="8,9 15,15 13,17 6,11" fill="#C6FF00"/>
+      </g>
+      <text x="34" y="22" font-family="Inter, -apple-system, sans-serif" font-size="13.5" font-weight="900" fill="#FFFFFF" letter-spacing="-0.3">Kurir<tspan fill="#C6FF00" font-style="italic">GO</tspan></text>
+    </g>
+  </g>
+
+  <!-- Hero Workload Card (Matte Charcoal with Functional Mini Route Stepper) -->
+  <g id="HeroCard">
+    <rect x="20" y="128" width="353" height="168" rx="22" fill="#18181B"/>
+    
+    <!-- Card Header Tag & Status -->
+    <rect x="36" y="142" width="102" height="18" rx="9" fill="#27272A"/>
+    <circle cx="45" cy="151" r="3" fill="#C6FF00"/>
+    <text x="53" y="155" font-family="Inter, -apple-system, sans-serif" font-size="9" font-weight="700" fill="#C6FF00">RUTE HARI INI</text>
+
+    <!-- Main Metric -->
+    <text x="36" y="184" font-family="Inter, -apple-system, sans-serif" font-size="26" font-weight="900" fill="#FFFFFF">5 Box Kue</text>
+    <text x="36" y="202" font-family="Inter, -apple-system, sans-serif" font-size="11.5" font-weight="500" fill="#A1A1AA">Total 28.5 KM • Estimasi 1 Jam 10 Mnt • Loop Tertutup</text>
+
+    <!-- Mini Route Stepper Container (Option 1: Purpose-Driven Functional UI) -->
+    <rect x="30" y="214" width="333" height="68" rx="16" fill="#232326"/>
+
+    <!-- Segment 1: V0 (Depot) -> V2 (Antang) -->
+    <line x1="68" y1="246" x2="134" y2="246" stroke="#C6FF00" stroke-width="2.5"/>
+    <polygon points="104,242 110,246 104,250" fill="#C6FF00"/>
+
+    <!-- Segment 2: V2 (Antang) -> V1 (Sudiang) -->
+    <line x1="156" y1="246" x2="222" y2="246" stroke="#C6FF00" stroke-width="2.5"/>
+    <polygon points="192,242 198,246 192,250" fill="#C6FF00"/>
+
+    <!-- Segment 3: V1 (Sudiang) -> V0 (Depot Return) -->
+    <line x1="244" y1="246" x2="306" y2="246" stroke="#52525B" stroke-width="2" stroke-dasharray="3 3"/>
+    <polygon points="278,243 283,246 278,249" fill="#71717A"/>
+
+    <!-- Waypoint 1: V0 (Depot Pettarani - Start) -->
+    <circle cx="56" cy="246" r="10" fill="#C6FF00"/>
+    <circle cx="56" cy="246" r="4" fill="#18181B"/>
+    <text x="56" y="233" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="8.5" font-weight="800" fill="#C6FF00">DEPOT</text>
+    <text x="56" y="268" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="8" font-weight="600" fill="#A1A1AA">V0 Start</text>
+
+    <!-- Waypoint 2: V2 (Outlet Antang - Stop 1) -->
+    <circle cx="145" cy="246" r="9" fill="#18181B" stroke="#C6FF00" stroke-width="2"/>
+    <text x="145" y="249" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="8" font-weight="900" fill="#FFFFFF">#1</text>
+    <text x="145" y="233" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="8.5" font-weight="800" fill="#FFFFFF">ANTANG</text>
+    <text x="145" y="268" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="8" font-weight="800" fill="#C6FF00">2 Box</text>
+
+    <!-- Waypoint 3: V1 (Outlet Sudiang - Stop 2) -->
+    <circle cx="233" cy="246" r="9" fill="#18181B" stroke="#C6FF00" stroke-width="2"/>
+    <text x="233" y="249" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="8" font-weight="900" fill="#FFFFFF">#2</text>
+    <text x="233" y="233" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="8.5" font-weight="800" fill="#FFFFFF">SUDIANG</text>
+    <text x="233" y="268" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="8" font-weight="800" fill="#C6FF00">3 Box</text>
+
+    <!-- Waypoint 4: V0 (Depot Return - Finish) -->
+    <circle cx="318" cy="246" r="9" fill="#27272A" stroke="#71717A" stroke-width="1.8"/>
+    <!-- Return Arrow / Depot Icon -->
+    <polygon points="316,243 320,246 316,249" fill="#A1A1AA"/>
+    <text x="318" y="233" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="8.5" font-weight="800" fill="#A1A1AA">PULANG</text>
+    <text x="318" y="268" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="8" font-weight="600" fill="#71717A">V0 Hub</text>
+  </g>
+
+  <!-- Section Header -->
+  <text x="20" y="322" font-family="Inter, -apple-system, sans-serif" font-size="16" font-weight="800" fill="#18181B">Daftar Pesanan Siap Kirim</text>
+  <text x="373" y="322" text-anchor="end" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#64748B">Lihat Semua (2)</text>
+
+  <!-- Order Card 1: BRW-01 (Sudiang) -->
+  <g id="Order_BRW01">
+    <rect x="20" y="336" width="353" height="92" rx="20" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+    
+    <!-- Authentic 3D Isometric Cardboard Box -->
+    <g transform="translate(36, 352)">
+      <polygon points="28,4 50,16 28,28 6,16" fill="#E3BA87"/>
+      <polygon points="6,16 28,28 28,52 6,40" fill="#C79966"/>
+      <polygon points="28,28 50,16 50,40 28,52" fill="#AB7D4F"/>
+      <!-- Packing Tape -->
+      <polygon points="25,5 31,8 31,48 25,45" fill="#F5E4CA" opacity="0.95"/>
+    </g>
+
+    <!-- Order Details -->
+    <text x="100" y="364" font-family="Inter, -apple-system, sans-serif" font-size="16" font-weight="800" fill="#18181B">BRW-01</text>
+    <text x="174" y="364" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#64748B">3 Box (Unti &amp; Cokelat)</text>
+    <text x="100" y="384" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#64748B">Cab. Sudiang • 12.5 KM dari Depot</text>
+
+    <!-- Status Tag -->
+    <rect x="100" y="396" width="92" height="20" rx="10" fill="#F1F5F9"/>
+    <circle cx="110" cy="406" r="3" fill="#64748B"/>
+    <text x="118" y="410" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#64748B">Belum Disortir</text>
+  </g>
+
+  <!-- Order Card 2: BRW-02 (Antang) -->
+  <g id="Order_BRW02">
+    <rect x="20" y="440" width="353" height="92" rx="20" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+    
+    <!-- 3D Cardboard Box -->
+    <g transform="translate(36, 456)">
+      <polygon points="28,4 50,16 28,28 6,16" fill="#E3BA87"/>
+      <polygon points="6,16 28,28 28,52 6,40" fill="#C79966"/>
+      <polygon points="28,28 50,16 50,40 28,52" fill="#AB7D4F"/>
+      <polygon points="25,5 31,8 31,48 25,45" fill="#F5E4CA" opacity="0.95"/>
+    </g>
+
+    <text x="100" y="468" font-family="Inter, -apple-system, sans-serif" font-size="16" font-weight="800" fill="#18181B">BRW-02</text>
+    <text x="174" y="468" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#64748B">2 Box (Choco Banana)</text>
+    <text x="100" y="488" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#64748B">Cab. Antang • 5.2 KM dari Depot</text>
+
+    <rect x="100" y="500" width="92" height="20" rx="10" fill="#F1F5F9"/>
+    <circle cx="110" cy="510" r="3" fill="#64748B"/>
+    <text x="118" y="514" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#64748B">Belum Disortir</text>
+  </g>
+
+  <!-- Floating Ergonomic Navigation Dock (Clean Vector Icons) -->
+  <g id="FloatingNavDock">
+    <rect x="71" y="694" width="250" height="50" rx="25" fill="#18181B"/>
+    
+    <!-- Active Home Capsule -->
+    <rect x="77" y="700" width="80" height="38" rx="19" fill="#C6FF00"/>
+    <!-- Vector Home Icon -->
+    <g transform="translate(90, 712)">
+      <path d="M 2 7 L 7 2 L 12 7 V 13 H 9 V 9 H 5 V 13 H 2 Z" fill="#18181B"/>
+    </g>
+    <text x="108" y="724" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="800" fill="#18181B">Home</text>
+
+    <!-- Vector Map Icon -->
+    <g transform="translate(182, 712)">
+      <path d="M 1 3 L 5 1 L 10 3 L 14 1 V 12 L 10 14 L 5 12 L 1 14 Z M 5 1 V 12 M 10 3 V 14" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g>
+    <!-- Vector Analytics Icon -->
+    <g transform="translate(230, 712)">
+      <rect x="1" y="7" width="3" height="7" rx="1" fill="#FFFFFF"/>
+      <rect x="6" y="3" width="3" height="11" rx="1" fill="#FFFFFF"/>
+      <rect x="11" y="0" width="3" height="14" rx="1" fill="#FFFFFF"/>
+    </g>
+    <!-- Vector User Icon -->
+    <g transform="translate(280, 712)">
+      <circle cx="7" cy="4" r="3.5" stroke="#FFFFFF" stroke-width="1.6" fill="none"/>
+      <path d="M 1 14 C 1 10.5 3.5 9 7 9 C 10.5 9 13 10.5 13 14" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+    </g>
+  </g>
+
+  <!-- Primary Bottom CTA Button (Electric Lime Full Pill) -->
+  <g id="PrimaryCTA">
+    <rect x="20" y="760" width="353" height="54" rx="27" fill="#C6FF00"/>
+    <!-- Package Icon in Button -->
+    <g transform="translate(118, 778)">
+      <polygon points="8,1 15,4 8,8 1,4" fill="#18181B"/>
+      <polygon points="1,4 8,8 8,15 1,11" fill="#18181B"/>
+      <polygon points="8,8 15,4 15,11 8,15" fill="#18181B"/>
+    </g>
+    <text x="142" y="794" font-family="Inter, -apple-system, sans-serif" font-size="15" font-weight="800" fill="#18181B">Cek Muatan Barang</text>
+  </g>
+</svg>

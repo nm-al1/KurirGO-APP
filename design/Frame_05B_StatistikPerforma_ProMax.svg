@@ -1,0 +1,208 @@
+<svg width="393" height="852" viewBox="0 0 393 852" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Device Frame & Canvas Background -->
+  <rect width="393" height="852" rx="44" fill="#F8FAFC"/>
+  <rect x="1.5" y="1.5" width="390" height="849" rx="42.5" stroke="#18181B" stroke-width="3"/>
+
+  <!-- Status Bar -->
+  <text x="32" y="32" font-family="Inter, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#18181B">09:41</text>
+  <!-- Dynamic Island -->
+  <rect x="141" y="12" width="112" height="28" rx="14" fill="#18181B"/>
+  <!-- Status Icons (5G, GPS Lock, Battery) -->
+  <circle cx="294" cy="26" r="3" fill="#10B981"/>
+  <text x="302" y="30" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#10B981">GPS</text>
+  <text x="326" y="30" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#18181B">5G</text>
+  <rect x="348" y="21" width="22" height="12" rx="3.5" stroke="#18181B" stroke-width="1.5"/>
+  <rect x="350.5" y="23.5" width="13" height="7" rx="1.5" fill="#18181B"/>
+  <path d="M 371 25.5 C 371.6 25.8 372 26.4 372 27 C 372 27.6 371.6 28.2 371 28.5" stroke="#18181B" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Top Navigation Header -->
+  <g id="TopHeader">
+    <circle cx="40" cy="74" r="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+    <path d="M 43 68 L 37 74 L 43 80" stroke="#18181B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <text x="70" y="80" font-family="Inter, -apple-system, sans-serif" font-size="18.5" font-weight="900" fill="#18181B">Performa Kurir</text>
+
+    <!-- KurirGO Brand Badge (Official Clean Pill) -->
+    <g id="BrandBadge" transform="translate(262, 57)">
+      <rect width="111" height="34" rx="17" fill="#18181B" stroke="#27272A" stroke-width="1.2"/>
+      <circle cx="18" cy="17" r="4.5" fill="#C6FF00"/>
+      <text x="32" y="22" font-family="Inter, -apple-system, sans-serif" font-size="13.5" font-weight="900" fill="#FFFFFF" letter-spacing="-0.3">Kurir<tspan fill="#C6FF00" font-style="italic">GO</tspan></text>
+    </g>
+  </g>
+
+  <!-- Hero Courier Shift Performance Card (Matte Charcoal) -->
+  <g id="CourierShiftHeroCard">
+    <rect x="20" y="104" width="353" height="156" rx="22" fill="#18181B"/>
+
+    <!-- Shift Tag -->
+    <rect x="36" y="120" width="144" height="20" rx="10" fill="#27272A"/>
+    <circle cx="46" cy="130" r="3" fill="#C6FF00"/>
+    <text x="54" y="134" font-family="Inter, -apple-system, sans-serif" font-size="9" font-weight="800" fill="#C6FF00">RINGKASAN SHIFT HARI INI</text>
+
+    <!-- Main Delivery Numbers -->
+    <text x="36" y="172" font-family="Inter, -apple-system, sans-serif" font-size="28" font-weight="900" fill="#FFFFFF">5 Box <tspan fill="#C6FF00" font-size="20">Selesai</tspan></text>
+    <text x="36" y="192" font-family="Inter, -apple-system, sans-serif" font-size="11.5" font-weight="500" fill="#A1A1AA">2 Alamat pengantaran tuntas • Kondisi paket 100% aman</text>
+
+    <!-- Key Metrics Row inside Hero -->
+    <line x1="36" y1="206" x2="357" y2="206" stroke="#27272A" stroke-width="1.2"/>
+    <g transform="translate(36, 214)">
+      <text x="0" y="13" font-family="Inter, -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#71717A">Total Jarak</text>
+      <text x="0" y="31" font-family="Inter, -apple-system, sans-serif" font-size="13.5" font-weight="800" fill="#FFFFFF">28.50 KM</text>
+    </g>
+    <g transform="translate(148, 214)">
+      <text x="0" y="13" font-family="Inter, -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#71717A">Waktu Bertugas</text>
+      <text x="0" y="31" font-family="Inter, -apple-system, sans-serif" font-size="13.5" font-weight="800" fill="#FFFFFF">1 Jam 10 Mnt</text>
+    </g>
+    <g transform="translate(254, 214)">
+      <text x="0" y="13" font-family="Inter, -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#71717A">Status Shift</text>
+      <text x="0" y="31" font-family="Inter, -apple-system, sans-serif" font-size="13.5" font-weight="800" fill="#C6FF00">Tuntas 100%</text>
+    </g>
+  </g>
+
+  <!-- Section: Weekly Deliveries Bar Chart Card -->
+  <g id="WeeklyBarChartCard" transform="translate(20, 272)">
+    <rect width="353" height="196" rx="20" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+
+    <text x="18" y="26" font-family="Inter, -apple-system, sans-serif" font-size="13" font-weight="800" fill="#18181B">BOX TERANTAR MINGGU INI</text>
+    <text x="335" y="26" text-anchor="end" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#047857">Total: 177 Boks</text>
+
+    <!-- Grid Horizontal Lines -->
+    <line x1="18" y1="60" x2="335" y2="60" stroke="#F1F5F9" stroke-width="1" stroke-dasharray="3 3"/>
+    <line x1="18" y1="100" x2="335" y2="100" stroke="#F1F5F9" stroke-width="1" stroke-dasharray="3 3"/>
+    <line x1="18" y1="140" x2="335" y2="140" stroke="#F1F5F9" stroke-width="1" stroke-dasharray="3 3"/>
+
+    <!-- Bar Chart Columns (Sen - Min) -->
+    <!-- Sen: 20 -->
+    <g transform="translate(28, 0)">
+      <rect x="0" y="86" width="22" height="60" rx="6" fill="#18181B"/>
+      <text x="11" y="80" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="9" font-weight="700" fill="#64748B">20</text>
+      <text x="11" y="162" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#64748B">Sen</text>
+    </g>
+
+    <!-- Sel: 26 -->
+    <g transform="translate(72, 0)">
+      <rect x="0" y="68" width="22" height="78" rx="6" fill="#18181B"/>
+      <text x="11" y="62" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="9" font-weight="700" fill="#64748B">26</text>
+      <text x="11" y="162" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#64748B">Sel</text>
+    </g>
+
+    <!-- Rab: 22 -->
+    <g transform="translate(116, 0)">
+      <rect x="0" y="80" width="22" height="66" rx="6" fill="#18181B"/>
+      <text x="11" y="74" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="9" font-weight="700" fill="#64748B">22</text>
+      <text x="11" y="162" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#64748B">Rab</text>
+    </g>
+
+    <!-- Kam: 32 -->
+    <g transform="translate(160, 0)">
+      <rect x="0" y="50" width="22" height="96" rx="6" fill="#18181B"/>
+      <text x="11" y="44" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="9" font-weight="700" fill="#64748B">32</text>
+      <text x="11" y="162" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#64748B">Kam</text>
+    </g>
+
+    <!-- Jum: 38 -->
+    <g transform="translate(204, 0)">
+      <rect x="0" y="40" width="22" height="106" rx="6" fill="#18181B"/>
+      <text x="11" y="34" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="9" font-weight="700" fill="#64748B">38</text>
+      <text x="11" y="162" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#64748B">Jum</text>
+    </g>
+
+    <!-- Sab: 34 -->
+    <g transform="translate(248, 0)">
+      <rect x="0" y="48" width="22" height="98" rx="6" fill="#18181B"/>
+      <text x="11" y="42" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="9" font-weight="700" fill="#64748B">34</text>
+      <text x="11" y="162" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#64748B">Sab</text>
+    </g>
+
+    <!-- Min (Hari Ini): Highlight Electric Lime -->
+    <g transform="translate(292, 0)">
+      <rect x="0" y="70" width="24" height="76" rx="6" fill="#C6FF00" stroke="#18181B" stroke-width="1.5"/>
+      <text x="12" y="64" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="9.5" font-weight="900" fill="#18181B">5</text>
+      <text x="12" y="162" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="10.5" font-weight="800" fill="#18181B">Hari Ini</text>
+    </g>
+
+    <!-- Subtitle Notice -->
+    <text x="18" y="182" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="500" fill="#94A3B8">Pencapaian target harian stabil di atas rata-rata pangkalan.</text>
+  </g>
+
+  <!-- Section: Rekapitulasi Kasir Shift (No Overlap, Clean Layout) -->
+  <g id="CashierSummaryCard" transform="translate(20, 480)">
+    <rect width="353" height="114" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+
+    <text x="18" y="24" font-family="Inter, -apple-system, sans-serif" font-size="12.5" font-weight="800" fill="#18181B">UANG DITERIMA SHIFT INI</text>
+    <text x="335" y="24" text-anchor="end" font-family="Inter, -apple-system, sans-serif" font-size="13" font-weight="900" fill="#18181B">Rp 375.000</text>
+
+    <!-- Row 1: Tunai COD Fisik -->
+    <g transform="translate(18, 38)">
+      <rect width="28" height="28" rx="8" fill="#FFFBEB"/>
+      <circle cx="14" cy="14" r="5" stroke="#B45309" stroke-width="1.5" fill="none"/>
+      <text x="38" y="13" font-family="Inter, -apple-system, sans-serif" font-size="11.5" font-weight="700" fill="#18181B">Tunai COD (Wajib Setor)</text>
+      <text x="38" y="25" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="500" fill="#64748B">Stop #1 Antang • Dipegang Kurir</text>
+      <text x="317" y="19" text-anchor="end" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="800" fill="#B45309">Rp 150.000</text>
+    </g>
+
+    <line x1="18" y1="74" x2="335" y2="74" stroke="#F1F5F9" stroke-width="1.2"/>
+
+    <!-- Row 2: QRIS Non-Tunai (Zero Overlap Guaranteed) -->
+    <g transform="translate(18, 82)">
+      <rect width="28" height="28" rx="8" fill="#ECFDF5"/>
+      <rect x="8" y="8" width="12" height="12" rx="2" stroke="#047857" stroke-width="1.5" fill="none"/>
+      <text x="38" y="13" font-family="Inter, -apple-system, sans-serif" font-size="11.5" font-weight="700" fill="#18181B">Non-Tunai (QRIS/Transfer)</text>
+      <text x="38" y="25" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="500" fill="#64748B">Stop #2 Sudiang • Rekening Browcyl</text>
+      <text x="317" y="19" text-anchor="end" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="800" fill="#047857">Rp 225.000</text>
+    </g>
+  </g>
+
+  <!-- SLA Badges Row -->
+  <g id="SlaBadges" transform="translate(20, 606)">
+    <!-- Badge 1: On-Time Delivery -->
+    <rect width="170" height="46" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+    <circle cx="24" cy="23" r="10" fill="#ECFDF5"/>
+    <path d="M 20 23 L 23 26 L 28 20" stroke="#047857" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="42" y="20" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="800" fill="#18181B">98.4% Tepat Waktu</text>
+    <text x="42" y="33" font-family="Inter, -apple-system, sans-serif" font-size="9.5" font-weight="500" fill="#64748B">Ketepatan Jam Kirim</text>
+
+    <!-- Badge 2: Zero Damage LIFO -->
+    <g transform="translate(183, 0)">
+      <rect width="170" height="46" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+      <circle cx="24" cy="23" r="10" fill="#ECFDF5"/>
+      <path d="M 20 23 L 23 26 L 28 20" stroke="#047857" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="42" y="20" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="800" fill="#18181B">100% Box Utuh</text>
+      <text x="42" y="33" font-family="Inter, -apple-system, sans-serif" font-size="9.5" font-weight="500" fill="#64748B">Kondisi Paket Sempurna</text>
+    </g>
+  </g>
+
+  <!-- Floating Ergonomic Navigation Dock (Tab 3: Performa ACTIVE - Perfectly Balanced) -->
+  <g id="FloatingNavDock">
+    <rect x="71" y="694" width="250" height="50" rx="25" fill="#18181B"/>
+
+    <!-- Tab 1: Vector Home Icon (Inactive) -->
+    <g transform="translate(94, 712)">
+      <path d="M 2 7 L 7 2 L 12 7 V 13 H 9 V 9 H 5 V 13 H 2 Z" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g>
+
+    <!-- Tab 2: Vector Map Icon (Inactive) -->
+    <g transform="translate(142, 712)">
+      <path d="M 1 3 L 5 1 L 10 3 L 14 1 V 12 L 10 14 L 5 12 L 1 14 Z M 5 1 V 12 M 10 3 V 14" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g>
+
+    <!-- Tab 3: Active Analytics Capsule (Symmetric Spacing) -->
+    <rect x="180" y="700" width="86" height="38" rx="19" fill="#C6FF00"/>
+    <!-- Vector Analytics Icon (Active in Capsule) -->
+    <g transform="translate(191, 712)">
+      <rect x="1" y="7" width="2.8" height="7" rx="1" fill="#18181B"/>
+      <rect x="5.5" y="3" width="2.8" height="11" rx="1" fill="#18181B"/>
+      <rect x="10" y="0" width="2.8" height="14" rx="1" fill="#18181B"/>
+    </g>
+    <text x="210" y="724" font-family="Inter, -apple-system, sans-serif" font-size="11.5" font-weight="900" fill="#18181B">Performa</text>
+
+    <!-- Tab 4: Vector User Icon (Inactive) -->
+    <g transform="translate(288, 712)">
+      <circle cx="7" cy="4" r="3.5" stroke="#FFFFFF" stroke-width="1.6" fill="none"/>
+      <path d="M 1 14 C 1 10.5 3.5 9 7 9 C 10.5 9 13 10.5 13 14" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+    </g>
+  </g>
+
+  <!-- Bottom Home Indicator Pill -->
+  <rect x="126" y="834" width="140" height="5" rx="2.5" fill="#18181B"/>
+</svg>

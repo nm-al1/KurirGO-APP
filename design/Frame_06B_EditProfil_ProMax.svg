@@ -1,0 +1,174 @@
+<svg width="393" height="852" viewBox="0 0 393 852" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Device Frame & Canvas Background -->
+  <rect width="393" height="852" rx="44" fill="#F8FAFC"/>
+  <rect x="1.5" y="1.5" width="390" height="849" rx="42.5" stroke="#18181B" stroke-width="3"/>
+
+  <!-- Status Bar -->
+  <text x="32" y="32" font-family="Inter, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#18181B">09:41</text>
+  <!-- Dynamic Island -->
+  <rect x="141" y="12" width="112" height="28" rx="14" fill="#18181B"/>
+  <!-- Status Icons (5G, GPS Lock, Battery) -->
+  <circle cx="294" cy="26" r="3" fill="#10B981"/>
+  <text x="302" y="30" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#10B981">GPS</text>
+  <text x="326" y="30" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#18181B">5G</text>
+  <rect x="348" y="21" width="22" height="12" rx="3.5" stroke="#18181B" stroke-width="1.5"/>
+  <rect x="350.5" y="23.5" width="13" height="7" rx="1.5" fill="#18181B"/>
+  <path d="M 371 25.5 C 371.6 25.8 372 26.4 372 27 C 372 27.6 371.6 28.2 371 28.5" stroke="#18181B" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Top Navigation Header -->
+  <g id="TopHeader">
+    <!-- Back Button Circle Pill -->
+    <circle cx="40" cy="74" r="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+    <path d="M 43 68 L 37 74 L 43 80" stroke="#18181B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Screen Title -->
+    <text x="70" y="80" font-family="Inter, -apple-system, sans-serif" font-size="18.5" font-weight="900" fill="#18181B">Ubah Profil Kurir</text>
+
+    <!-- KurirGO Brand Badge (Official Clean Pill) -->
+    <g id="BrandBadge" transform="translate(262, 57)">
+      <rect width="111" height="34" rx="17" fill="#18181B" stroke="#27272A" stroke-width="1.2"/>
+      <circle cx="18" cy="17" r="4.5" fill="#C6FF00"/>
+      <text x="32" y="22" font-family="Inter, -apple-system, sans-serif" font-size="13.5" font-weight="900" fill="#FFFFFF" letter-spacing="-0.3">Kurir<tspan fill="#C6FF00" font-style="italic">GO</tspan></text>
+    </g>
+  </g>
+
+  <!-- Section 1: Avatar / Photo Uploader Hero Card -->
+  <g id="AvatarUploadCard" transform="translate(20, 102)">
+    <rect width="353" height="132" rx="20" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+
+    <!-- Main Avatar Container (Center) -->
+    <g transform="translate(141, 14)">
+      <!-- Outer Accent Ring -->
+      <circle cx="36" cy="36" r="36" fill="#242428" stroke="#C6FF00" stroke-width="3"/>
+      <!-- Shirt / Collar -->
+      <path d="M 12 62 C 12 48 24 43 36 43 C 48 43 60 48 60 62 Z" fill="#333338"/>
+      <polygon points="31,43 41,43 37,52 35,52" fill="#C6FF00"/>
+      <!-- Head -->
+      <circle cx="36" cy="29" r="13.5" fill="#E2A970"/>
+      <!-- Browcyl Green Cap -->
+      <path d="M 21 24 C 21 14 28 13 36 13 C 44 13 51 14 51 24 Z" fill="#C6FF00"/>
+      <path d="M 27 24 L 51 24" stroke="#18181B" stroke-width="3" stroke-linecap="round"/>
+
+      <!-- Floating Camera / Edit Action Badge -->
+      <g transform="translate(48, 48)">
+        <circle cx="13" cy="13" r="13" fill="#18181B" stroke="#C6FF00" stroke-width="2"/>
+        <!-- Camera Icon -->
+        <path d="M 8 11 L 10 9 H 16 L 18 11 H 20 C 20.6 11 21 11.4 21 12 V 17 C 21 17.6 20.6 18 20 18 H 6 C 5.4 18 5 17.6 5 17 V 12 C 5 11.4 5.4 11 6 11 Z" fill="#C6FF00"/>
+        <circle cx="13" cy="14.5" r="2.8" stroke="#18181B" stroke-width="1.2" fill="none"/>
+      </g>
+    </g>
+
+    <!-- Subtitle Under Avatar -->
+    <text x="176" y="108" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="800" fill="#18181B">Ganti Foto Profil Mitra</text>
+    <text x="176" y="122" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="500" fill="#64748B">Format JPG, PNG atau WebP • Wajib seragam Browcyl</text>
+  </g>
+
+  <!-- Section 2: Form Input Fields Card -->
+  <g id="ProfileFormCard" transform="translate(20, 244)">
+    <rect width="353" height="444" rx="20" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+
+    <!-- Field 1: ID Kemitraan (Locked / Read Only) -->
+    <g transform="translate(16, 16)">
+      <text x="0" y="11" font-family="Inter, -apple-system, sans-serif" font-size="9.5" font-weight="800" fill="#64748B" letter-spacing="0.5">ID MITRA KURIR (CABANG PETTARANI TUNGGAL)</text>
+      <rect x="0" y="18" width="321" height="44" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.2"/>
+      <!-- Lock Icon -->
+      <g transform="translate(12, 32)">
+        <rect x="1" y="5" width="12" height="9" rx="2" fill="#94A3B8"/>
+        <path d="M 4 5 V 3 C 4 1.5 5.5 0.5 7 0.5 C 8.5 0.5 10 1.5 10 3 V 5" stroke="#94A3B8" stroke-width="1.5" fill="none"/>
+      </g>
+      <text x="34" y="45" font-family="Inter, -apple-system, sans-serif" font-size="13" font-weight="800" fill="#334155">BRW-KRR-042</text>
+      <!-- Hub Badge -->
+      <rect x="196" y="27" width="113" height="26" rx="13" fill="#F1F5F9"/>
+      <circle cx="207" cy="40" r="3" fill="#10B981"/>
+      <text x="215" y="44" font-family="Inter, -apple-system, sans-serif" font-size="9.5" font-weight="700" fill="#475569">Cab. Pettarani</text>
+    </g>
+
+    <!-- Field 2: Nama Lengkap -->
+    <g transform="translate(16, 90)">
+      <text x="0" y="11" font-family="Inter, -apple-system, sans-serif" font-size="9.5" font-weight="800" fill="#18181B" letter-spacing="0.5">NAMA LENGKAP MITRA KURIR</text>
+      <rect x="0" y="18" width="321" height="44" rx="10" fill="#FFFFFF" stroke="#18181B" stroke-width="1.8"/>
+      <!-- User Icon -->
+      <g transform="translate(12, 32)">
+        <circle cx="7" cy="4" r="3.5" stroke="#18181B" stroke-width="1.5" fill="none"/>
+        <path d="M 1 14 C 1 10.5 3.5 9 7 9 C 10.5 9 13 10.5 13 14" stroke="#18181B" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+      </g>
+      <text x="34" y="45" font-family="Inter, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#18181B">Ardiansyah Pratama</text>
+      <!-- Checkmark Verified -->
+      <circle cx="299" cy="40" r="9" fill="#ECFDF5"/>
+      <path d="M 296 40 L 298 42 L 302 38" stroke="#047857" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Field 3: Nomor WhatsApp / Telepon -->
+    <g transform="translate(16, 164)">
+      <text x="0" y="11" font-family="Inter, -apple-system, sans-serif" font-size="9.5" font-weight="800" fill="#64748B" letter-spacing="0.5">NOMOR WHATSAPP (KOORDINASI PEMESAN)</text>
+      <rect x="0" y="18" width="321" height="44" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+      <!-- Phone Icon -->
+      <g transform="translate(12, 32)">
+        <path d="M 2 4 C 2 2.9 2.9 2 4 2 L 6.5 2 C 7.2 2 7.7 2.4 7.9 3 L 8.8 5.6 C 9 6.2 8.8 6.9 8.3 7.3 L 7 8.3 C 7.9 10.3 9.7 12.1 11.7 13 L 12.7 11.7 C 13.1 11.2 13.8 11 14.4 11.2 L 17 12.1 C 17.6 12.3 18 12.8 18 13.5 L 18 16 C 18 17.1 17.1 18 16 18 C 8.3 18 2 11.7 2 4 Z" fill="#64748B"/>
+      </g>
+      <text x="34" y="45" font-family="Inter, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#18181B">+62 812-4567-8901</text>
+      <!-- OTP Badge -->
+      <rect x="220" y="27" width="89" height="26" rx="13" fill="#ECFDF5"/>
+      <text x="264" y="44" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="9.5" font-weight="800" fill="#047857">Aktif / OTP</text>
+    </g>
+
+    <!-- Field 4: Alamat Domisili / Zona Hub -->
+    <g transform="translate(16, 238)">
+      <text x="0" y="11" font-family="Inter, -apple-system, sans-serif" font-size="9.5" font-weight="800" fill="#64748B" letter-spacing="0.5">ALAMAT DOMISILI (PENETAPAN ZONA HUB)</text>
+      <rect x="0" y="18" width="321" height="44" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+      <!-- Map Pin Icon -->
+      <g transform="translate(12, 32)">
+        <path d="M 7 2 C 4.2 2 2 4.2 2 7 C 2 10.5 7 15 7 15 C 7 15 12 10.5 12 7 C 12 4.2 9.8 2 7 2 Z" stroke="#64748B" stroke-width="1.3" fill="none"/>
+        <circle cx="7" cy="7" r="2" fill="#64748B"/>
+      </g>
+      <text x="34" y="45" font-family="Inter, -apple-system, sans-serif" font-size="12.5" font-weight="700" fill="#18181B">Panakkukang, Kota Makassar</text>
+      <!-- Zone Badge -->
+      <rect x="222" y="27" width="87" height="26" rx="13" fill="#F1F5F9"/>
+      <circle cx="233" cy="40" r="3" fill="#10B981"/>
+      <text x="241" y="44" font-family="Inter, -apple-system, sans-serif" font-size="9.5" font-weight="700" fill="#475569">Zona Timur</text>
+    </g>
+
+    <!-- Field 5: Kontak Darurat -->
+    <g transform="translate(16, 312)">
+      <text x="0" y="11" font-family="Inter, -apple-system, sans-serif" font-size="9.5" font-weight="800" fill="#64748B" letter-spacing="0.5">KONTAK DARURAT (KELUARGA DI MAKASSAR)</text>
+      <rect x="0" y="18" width="321" height="44" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+      <!-- Emergency Heart Shield Icon -->
+      <g transform="translate(12, 33)">
+        <path d="M 2 4 C 2 9 8 13 8 13 C 8 13 14 9 14 4 C 14 1.5 11.5 0.5 8 3 C 4.5 0.5 2 1.5 2 4 Z" fill="#EF4444"/>
+      </g>
+      <text x="34" y="45" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#18181B">Ibu Rahmawati (0813-9876-5432)</text>
+    </g>
+
+    <!-- Bottom Notice -->
+    <g transform="translate(16, 386)">
+      <rect width="321" height="42" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+      <circle cx="20" cy="21" r="7" fill="#E0F2FE"/>
+      <text x="20" y="25" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="900" fill="#0284C7">i</text>
+      <text x="34" y="18" font-family="Inter, -apple-system, sans-serif" font-size="9.5" font-weight="600" fill="#475569">Perubahan data profil disinkronkan ke Dispatcher</text>
+      <text x="34" y="30" font-family="Inter, -apple-system, sans-serif" font-size="9" font-weight="500" fill="#94A3B8">Hub Pettarani dalam waktu 5-10 menit.</text>
+    </g>
+  </g>
+
+  <!-- Section 3: Bottom Action Buttons -->
+  <g id="FormActions">
+    <!-- Primary CTA: Simpan Perubahan (Electric Lime Full Pill) -->
+    <g id="BtnSimpanProfil" transform="translate(20, 704)">
+      <rect width="353" height="52" rx="26" fill="#C6FF00" stroke="#18181B" stroke-width="1.5"/>
+      <!-- Save Checkmark Icon -->
+      <g transform="translate(94, 18)">
+        <path d="M 2 8 L 6 12 L 14 3" stroke="#18181B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <text x="122" y="32" font-family="Inter, -apple-system, sans-serif" font-size="15" font-weight="900" fill="#18181B">Simpan Perubahan Profil</text>
+    </g>
+
+    <!-- Secondary CTA: Batal & Kembali -->
+    <g id="BtnBatal" transform="translate(20, 766)">
+      <rect width="353" height="42" rx="21" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+      <text x="176" y="26" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#64748B">Batal &amp; Kembali ke Profil</text>
+    </g>
+  </g>
+
+  <!-- Bottom Home Indicator Pill -->
+  <rect x="126" y="834" width="140" height="5" rx="2.5" fill="#18181B"/>
+</svg>
+

@@ -1,0 +1,180 @@
+<svg width="393" height="852" viewBox="0 0 393 852" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Device Frame & Canvas Background -->
+  <rect width="393" height="852" rx="44" fill="#F8FAFC"/>
+  <rect x="1.5" y="1.5" width="390" height="849" rx="42.5" stroke="#18181B" stroke-width="3"/>
+
+  <!-- Live Turn-by-Turn GPS Map Navigation View -->
+  <g id="LiveMapSurface">
+    <!-- Map Base -->
+    <rect width="393" height="600" fill="#E2E8F0"/>
+
+    <!-- Urban Road Grids (Makassar Antang Corridor) -->
+    <!-- Jl. Batua Raya (Cross Street) -->
+    <path d="M 0 460 L 393 420" stroke="#CBD5E1" stroke-width="20" stroke-linecap="round"/>
+    <path d="M 0 460 L 393 420" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round"/>
+
+    <!-- Jl. Tamangapa (Perpendicular) -->
+    <path d="M 280 0 L 260 600" stroke="#CBD5E1" stroke-width="16" stroke-linecap="round"/>
+    <path d="M 280 0 L 260 600" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/>
+
+    <!-- Primary Navigated Route: Jl. Antang Raya -->
+    <path d="M 90 600 L 150 440 L 320 340 L 330 200" stroke="#CBD5E1" stroke-width="24" stroke-linecap="round"/>
+    <path d="M 90 600 L 150 440 L 320 340 L 330 200" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round"/>
+
+    <!-- Secondary Residential Streets -->
+    <path d="M 0 280 L 160 250 M 180 340 L 250 560 M 300 280 L 393 290" stroke="#E2E8F0" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Street Names (Authentic Makassar Navigation) -->
+    <text x="14" y="445" font-family="Inter, -apple-system, sans-serif" font-size="9" font-weight="700" fill="#94A3B8">JL. BATUA RAYA</text>
+    <text x="210" y="380" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#64748B" transform="rotate(-30 210 380)">JL. ANTANG RAYA</text>
+    <text x="286" y="520" font-family="Inter, -apple-system, sans-serif" font-size="9" font-weight="700" fill="#94A3B8" transform="rotate(88 286 520)">JL. TAMANGAPA</text>
+  </g>
+
+  <!-- Live Turn-by-Turn GPS Active Trajectory (Electric Lime Underglow) -->
+  <g id="ActiveTrajectory">
+    <!-- Outer Glow -->
+    <path d="M 120 520 L 150 440 L 320 340 L 330 210" fill="none" stroke="#C6FF00" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/>
+    <!-- Dark Foundation Line -->
+    <path d="M 120 520 L 150 440 L 320 340 L 330 210" fill="none" stroke="#18181B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Electric Lime Core Line -->
+    <path d="M 120 520 L 150 440 L 320 340 L 330 210" fill="none" stroke="#C6FF00" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Destination Pin (Outlet Antang - Stop #1) -->
+    <g transform="translate(330, 210)">
+      <circle cx="0" cy="0" r="18" fill="#18181B" stroke="#C6FF00" stroke-width="3"/>
+      <!-- Cake/Box Vector Icon -->
+      <polygon points="0,-7 7,-3 0,1 -7,-3" fill="#C6FF00"/>
+      <polygon points="-7,-3 0,1 0,8 -7,4" fill="#C6FF00"/>
+      <polygon points="0,1 7,-3 7,4 0,8" fill="#A3E635"/>
+      <!-- Callout Badge -->
+      <rect x="-65" y="-34" width="130" height="20" rx="10" fill="#18181B"/>
+      <text x="0" y="-21" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="9" font-weight="800" fill="#C6FF00">Outlet Antang (Stop #1)</text>
+    </g>
+
+    <!-- Courier Rider GPS Puck (Position Marker) -->
+    <g transform="translate(120, 520)">
+      <!-- Outer Pulsing Radar Ring -->
+      <circle cx="0" cy="0" r="28" fill="#C6FF00" opacity="0.25"/>
+      <circle cx="0" cy="0" r="16" fill="#C6FF00" opacity="0.6"/>
+      <!-- White Core Border -->
+      <circle cx="0" cy="0" r="10" fill="#FFFFFF"/>
+      <circle cx="0" cy="0" r="7" fill="#18181B"/>
+      <!-- Heading Arrow (Pointing Northeast towards turn) -->
+      <polygon points="0,-9 5,4 0,1 -5,4" fill="#C6FF00" transform="rotate(32)"/>
+    </g>
+  </g>
+
+  <!-- Speed Limit Sign & Map Floating Tools -->
+  <g id="FloatingMapWidgets">
+    <!-- Speed Limit 40 km/h -->
+    <circle cx="36" cy="180" r="18" fill="#FFFFFF" stroke="#EF4444" stroke-width="3" filter="drop-shadow(0px 4px 6px rgba(0,0,0,0.1))"/>
+    <text x="36" y="185" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="900" fill="#18181B">40</text>
+
+    <!-- Compass & Recenter Tool -->
+    <circle cx="355" cy="480" r="22" fill="#FFFFFF" filter="drop-shadow(0px 4px 6px rgba(0,0,0,0.1))"/>
+    <circle cx="355" cy="480" r="10" fill="none" stroke="#18181B" stroke-width="2"/>
+    <line x1="355" y1="466" x2="355" y2="470" stroke="#18181B" stroke-width="2" stroke-linecap="round"/>
+    <line x1="355" y1="490" x2="355" y2="494" stroke="#18181B" stroke-width="2" stroke-linecap="round"/>
+    <line x1="341" y1="480" x2="345" y2="480" stroke="#18181B" stroke-width="2" stroke-linecap="round"/>
+    <line x1="365" y1="480" x2="369" y2="480" stroke="#18181B" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="355" cy="480" r="3.5" fill="#18181B"/>
+  </g>
+
+  <!-- Status Bar (Over Map & Dynamic Island) -->
+  <text x="32" y="32" font-family="Inter, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">09:41</text>
+  <rect x="141" y="12" width="112" height="28" rx="14" fill="#000000"/>
+  <circle cx="294" cy="26" r="3" fill="#10B981"/>
+  <text x="302" y="30" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#10B981">GPS</text>
+  <text x="326" y="30" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">5G</text>
+  <rect x="348" y="21" width="22" height="12" rx="3.5" stroke="#FFFFFF" stroke-width="1.5"/>
+  <rect x="350.5" y="23.5" width="13" height="7" rx="1.5" fill="#FFFFFF"/>
+  <path d="M 371 25.5 C 371.6 25.8 372 26.4 372 27 C 372 27.6 371.6 28.2 371 28.5" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Top Floating Turn HUD Banner (Matte Charcoal with Electric Lime Turn Arrow) -->
+  <g id="TurnHUD">
+    <rect x="16" y="52" width="361" height="106" rx="22" fill="#18181B" filter="drop-shadow(0px 8px 16px rgba(0,0,0,0.25))"/>
+    
+    <!-- Big Sharp Right Turn Arrow (Electric Lime) -->
+    <g transform="translate(36, 74)">
+      <path d="M 6 48 L 6 22 C 6 12 14 6 24 6 L 44 6" fill="none" stroke="#C6FF00" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 34 -4 L 46 6 L 34 16" fill="none" stroke="#C6FF00" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Maneuver Text & Target -->
+    <text x="100" y="74" font-family="Inter, -apple-system, sans-serif" font-size="10.5" font-weight="800" fill="#C6FF00" letter-spacing="0.5">STOP #1 DARI 2 • OUTLET ANTANG</text>
+
+    <!-- KurirGO Live Nav Badge -->
+    <g id="KurirGONavBadge" transform="translate(285, 62)">
+      <rect width="78" height="22" rx="11" fill="#27272A" stroke="#3F3F46" stroke-width="1"/>
+      <circle cx="12" cy="11" r="3" fill="#C6FF00"/>
+      <text x="22" y="15" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="900" fill="#FFFFFF">Kurir<tspan fill="#C6FF00" font-style="italic">GO</tspan></text>
+    </g>
+    <text x="100" y="104" font-family="Inter, -apple-system, sans-serif" font-size="28" font-weight="900" fill="#FFFFFF">500 M</text>
+    <text x="194" y="102" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#A1A1AA">Est. 2 mnt</text>
+    <text x="100" y="124" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#E4E4E7">Belok Kanan ke Jl. Antang Raya No. 45</text>
+
+    <!-- Telemetry Tag (Akurasi GPS) -->
+    <rect x="100" y="132" width="138" height="16" rx="8" fill="#27272A"/>
+    <circle cx="108" cy="140" r="2.5" fill="#10B981"/>
+    <text x="116" y="143" font-family="Inter, -apple-system, sans-serif" font-size="9" font-weight="700" fill="#A1A1AA">GPS Akurat (±3m) • 38 km/h</text>
+  </g>
+
+  <!-- Bottom Courier Interaction Console (Matte Charcoal #18181B) -->
+  <g id="CourierConsole">
+    <rect x="0" y="556" width="393" height="296" rx="32" fill="#18181B"/>
+    <!-- Console Drag Handle -->
+    <rect x="176" y="568" width="40" height="4" rx="2" fill="#3F3F46"/>
+
+    <!-- Customer Details Card -->
+    <g id="CustomerSection">
+      <!-- Avatar Circle with Initial -->
+      <circle cx="44" cy="614" r="20" fill="#27272A"/>
+      <text x="44" y="620" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="14" font-weight="800" fill="#C6FF00">IN</text>
+
+      <!-- Customer Name & Order Info -->
+      <text x="74" y="608" font-family="Inter, -apple-system, sans-serif" font-size="15" font-weight="800" fill="#FFFFFF">Ibu Nurul (Outlet Antang)</text>
+      <text x="74" y="624" font-family="Inter, -apple-system, sans-serif" font-size="11.5" font-weight="500" fill="#A1A1AA">BRW-02 • 2 Box (Choco Banana Melt)</text>
+
+      <!-- Action Button 1: Quick Call (Vector Phone) -->
+      <circle cx="310" cy="614" r="20" fill="#27272A"/>
+      <path d="M 305 607 C 304 608 304 610 305 612 C 306 614 308 616 310 617 C 312 618 314 618 315 617 L 316 616 C 317 615 317 614 316 613 L 314 611 C 313 610 312 610 311 611 L 310 612 C 309 612 308 611 307 610 C 306 609 306 608 306 607 L 307 606 C 308 605 308 604 307 603 L 305 601 C 304 600 303 600 302 601 Z" fill="#C6FF00"/>
+
+      <!-- Action Button 2: WhatsApp / Chat (Vector Chat) -->
+      <circle cx="356" cy="614" r="20" fill="#27272A"/>
+      <path d="M 350 607 C 347 607 345 609 345 612 C 345 614 346 615 348 616 L 347 620 L 351 618 C 352 618 353 618 355 617 C 357 616 358 614 358 612 C 358 609 355 607 350 607 Z" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Subtle Hairline Divider -->
+    <line x1="20" y1="648" x2="373" y2="648" stroke="#27272A" stroke-width="1"/>
+
+    <!-- COD Payment & Proof of Delivery Row -->
+    <g id="CODSection">
+      <!-- Money / Bill Vector Icon -->
+      <rect x="24" y="666" width="30" height="20" rx="4" fill="#27272A"/>
+      <circle cx="39" cy="676" r="4" fill="#C6FF00"/>
+      <line x1="27" y1="676" x2="29" y2="676" stroke="#C6FF00" stroke-width="1.5"/>
+      <line x1="49" y1="676" x2="51" y2="676" stroke="#C6FF00" stroke-width="1.5"/>
+
+      <!-- Label & Value -->
+      <text x="64" y="674" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#A1A1AA">Tagihan COD: <tspan fill="#FFFFFF" font-weight="800">Rp 150.000</tspan></text>
+      <text x="64" y="690" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#10B981">● Pembayaran Terkonfirmasi Lunas</text>
+
+      <!-- Active iOS-Style Electric Lime Toggle -->
+      <rect x="317" y="666" width="54" height="30" rx="15" fill="#C6FF00"/>
+      <circle cx="353" cy="681" r="12" fill="#18181B"/>
+      <!-- Checkmark inside toggle knob -->
+      <path d="M 349 681 L 352 684 L 357 678" stroke="#C6FF00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Primary Bottom Action CTA (Electric Lime Full Pill) -->
+    <g id="PrimaryCTA">
+      <rect x="20" y="760" width="353" height="54" rx="27" fill="#C6FF00"/>
+      <!-- Checkmark Complete Icon -->
+      <g transform="translate(72, 778)">
+        <circle cx="8" cy="8" r="8" fill="#18181B"/>
+        <path d="M 5 8 L 7.5 10.5 L 12 5.5" stroke="#C6FF00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <text x="96" y="794" font-family="Inter, -apple-system, sans-serif" font-size="14.5" font-weight="800" fill="#18181B">Selesaikan &amp; Lanjut ke Stop #2 (Sudiang)</text>
+    </g>
+  </g>
+</svg>

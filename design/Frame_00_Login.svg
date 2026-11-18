@@ -1,0 +1,154 @@
+<svg width="393" height="852" viewBox="0 0 393 852" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Electric Lime Core Gradient -->
+    <linearGradient id="limeGradLogin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2FF66"/>
+      <stop offset="50%" stop-color="#C6FF00"/>
+      <stop offset="100%" stop-color="#84CC16"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Device Frame & Canvas Background (Matte Charcoal #18181B) -->
+  <rect width="393" height="852" rx="44" fill="#18181B"/>
+  <rect x="1.5" y="1.5" width="390" height="849" rx="42.5" stroke="#27272A" stroke-width="3"/>
+
+  <!-- Status Bar (White on Dark) -->
+  <text x="32" y="32" font-family="Inter, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">09:41</text>
+  <!-- Dynamic Island -->
+  <rect x="141" y="12" width="112" height="28" rx="14" fill="#000000"/>
+  <!-- Status Icons -->
+  <circle cx="294" cy="26" r="3" fill="#10B981"/>
+  <text x="302" y="30" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#10B981">GPS</text>
+  <text x="326" y="30" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">5G</text>
+  <rect x="348" y="21" width="22" height="12" rx="3.5" stroke="#FFFFFF" stroke-width="1.5"/>
+  <rect x="350.5" y="23.5" width="13" height="7" rx="1.5" fill="#FFFFFF"/>
+  <path d="M 371 25.5 C 371.6 25.8 372 26.4 372 27 C 372 27.6 371.6 28.2 371 28.5" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Brand Logo & Header Area (INTEGRATED OFFICIAL KURIRGO LOGO) -->
+  <g id="BrandHeader" transform="translate(0, 56)">
+    <!-- KurirGO Official Emblem Badge (64x64) -->
+    <g transform="translate(164, 8)">
+      <rect width="64" height="64" rx="18" fill="#202024" stroke="#2E2E33" stroke-width="1.5"/>
+      <circle cx="32" cy="32" r="20" fill="#C6FF00" opacity="0.12"/>
+
+      <!-- Navigation Arc (TSP Loop) -->
+      <path d="M 17 37 C 12 28 15 18 24 16 C 33 13 44 16 49 24 C 53 31 52 40 45 47 C 40 52 29 53 21 49" 
+            fill="none" stroke="#2E2E33" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M 17 37 C 12 28 15 18 24 16 C 33 13 44 16 49 24" 
+            fill="none" stroke="url(#limeGradLogin)" stroke-width="3" stroke-linecap="round"/>
+
+      <!-- Waypoint Nodes -->
+      <circle cx="24" cy="16" r="2" fill="#FFFFFF"/>
+      <circle cx="49" cy="24" r="2" fill="#C6FF00"/>
+
+      <!-- Isometric Cargo Box -->
+      <polygon points="32,19 44,26 32,32 20,26" fill="#3F3F46"/>
+      <polygon points="20,26 32,32 32,45 20,39" fill="#27272A"/>
+      <polygon points="32,32 44,26 44,39 32,45" fill="#18181B"/>
+
+      <!-- Dynamic 'K' Speed Arrow -->
+      <polygon points="25,23 29,21 29,41 25,43" fill="url(#limeGradLogin)"/>
+      <polygon points="29,31 37,23 41,25 33,33" fill="url(#limeGradLogin)"/>
+      <polygon points="31,32 39,41 36,43 28,34" fill="url(#limeGradLogin)"/>
+      <polygon points="41,23 45,24 43,28 42,25" fill="#FFFFFF"/>
+
+      <circle cx="32" cy="32" r="1.5" fill="#C6FF00"/>
+    </g>
+
+    <!-- App Title: Official KurirGO Typographic Wordmark -->
+    <text x="196" y="104" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="28" font-weight="900" fill="#FFFFFF" letter-spacing="-0.5">
+      Kurir<tspan fill="#C6FF00" font-style="italic">GO</tspan>
+    </text>
+    <text x="196" y="124" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="800" fill="#A1A1AA" letter-spacing="2">
+      BROWCYL DELIVERY • MAKASSAR
+    </text>
+
+    <!-- Hub Location Pill Badge -->
+    <rect x="111" y="138" width="170" height="24" rx="12" fill="#27272A"/>
+    <circle cx="123" cy="150" r="4" fill="#C6FF00"/>
+    <text x="133" y="154" font-family="Inter, -apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#E4E4E7">Hub Pettarani (Base Depot)</text>
+  </g>
+
+  <!-- Login Form Container (White Curved Sheet) -->
+  <g id="LoginFormSheet">
+    <rect x="0" y="252" width="393" height="600" rx="36" fill="#FFFFFF"/>
+    <!-- Drag Handle -->
+    <rect x="176" y="266" width="40" height="4" rx="2" fill="#E2E8F0"/>
+
+    <!-- Form Title -->
+    <text x="24" y="310" font-family="Inter, -apple-system, sans-serif" font-size="20" font-weight="900" fill="#18181B">Masuk Akun Kurir</text>
+    <text x="24" y="330" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#64748B">Gunakan username yang telah Anda daftarkan di sistem</text>
+
+    <!-- Input Field 1: Username / No. HP -->
+    <g id="Field_CourierID">
+      <text x="24" y="370" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#18181B">Username atau No. Handphone</text>
+      <rect x="20" y="380" width="353" height="52" rx="16" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+      <!-- User Vector Icon -->
+      <g transform="translate(36, 396)">
+        <circle cx="9" cy="6" r="4.5" stroke="#64748B" stroke-width="1.8" fill="none"/>
+        <path d="M 2 17 C 2 13 5 11 9 11 C 13 11 16 13 16 17" stroke="#64748B" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+      </g>
+      <text x="64" y="412" font-family="Inter, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#18181B">ardiansyah</text>
+      <circle cx="348" cy="406" r="9" fill="#10B981"/>
+      <path d="M 344 406 L 347 409 L 352 403" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Input Field 2: PIN / Kata Sandi -->
+    <g id="Field_Password">
+      <text x="24" y="458" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#18181B">PIN Akses (4-6 Digit)</text>
+      <rect x="20" y="468" width="353" height="52" rx="16" fill="#F8FAFC" stroke="#C6FF00" stroke-width="2"/>
+      <!-- Lock Vector Icon -->
+      <g transform="translate(36, 484)">
+        <rect x="3" y="8" width="14" height="10" rx="3" stroke="#18181B" stroke-width="1.8" fill="none"/>
+        <path d="M 6 8 V 5 C 6 3 7.5 1.5 10 1.5 C 12.5 1.5 14 3 14 5 V 8" stroke="#18181B" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="10" cy="13" r="1.5" fill="#18181B"/>
+      </g>
+      <circle cx="70" cy="494" r="4.5" fill="#18181B"/>
+      <circle cx="86" cy="494" r="4.5" fill="#18181B"/>
+      <circle cx="102" cy="494" r="4.5" fill="#18181B"/>
+      <circle cx="118" cy="494" r="4.5" fill="#18181B"/>
+      <!-- Eye Toggle Vector Icon -->
+      <g transform="translate(338, 484)">
+        <path d="M 2 10 C 5 4 15 4 18 10 C 15 16 5 16 2 10 Z" stroke="#64748B" stroke-width="1.6" fill="none"/>
+        <circle cx="10" cy="10" r="3" stroke="#64748B" stroke-width="1.6" fill="none"/>
+      </g>
+    </g>
+
+    <!-- Options Row: Remember Me & Forgot PIN -->
+    <g id="OptionsRow">
+      <rect x="22" y="538" width="18" height="18" rx="5" fill="#18181B"/>
+      <path d="M 26 547 L 29 550 L 36 542" stroke="#C6FF00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="48" y="552" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#18181B">Ingat Perangkat Ini</text>
+      <text x="371" y="552" text-anchor="end" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#10B981">Lupa PIN?</text>
+    </g>
+
+    <!-- Operational Notice Banner -->
+    <g id="NoticeBanner">
+      <rect x="20" y="578" width="353" height="48" rx="14" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+      <g transform="translate(32, 592)">
+        <polygon points="9,1 17,5 17,11 9,16 1,11 1,5" fill="#64748B"/>
+        <line x1="9" y1="5" x2="9" y2="10" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+        <circle cx="9" cy="12.5" r="0.8" fill="#FFFFFF"/>
+      </g>
+      <text x="56" y="598" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#18181B">Khusus Mitra &amp; Armada Browcyl</text>
+      <text x="56" y="614" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="500" fill="#64748B">Pastikan GPS aktif &amp; baterai HP di atas 20% saat bertugas.</text>
+    </g>
+
+    <!-- Primary Login CTA Button (Electric Lime Full Pill) -->
+    <g id="LoginCTA">
+      <rect x="20" y="648" width="353" height="54" rx="27" fill="#C6FF00"/>
+      <g transform="translate(112, 666)">
+        <line x1="2" y1="9" x2="16" y2="9" stroke="#18181B" stroke-width="2.2" stroke-linecap="round"/>
+        <polyline points="11,4 16,9 11,14" fill="none" stroke="#18181B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <text x="140" y="682" font-family="Inter, -apple-system, sans-serif" font-size="15" font-weight="800" fill="#18181B">Masuk ke Dashboard</text>
+    </g>
+
+    <!-- Register Switch Link -->
+    <g id="RegisterSwitch" transform="translate(196, 732)">
+      <text text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="12.5" fill="#64748B">
+        Belum terdaftar sebagai kurir? <tspan font-weight="800" fill="#18181B">Daftar Akun</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

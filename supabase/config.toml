@@ -1,0 +1,19 @@
+project_id = "kurirgo"
+
+[auth]
+site_url = "com.browcyl.kurirgo://login-callback/"
+additional_redirect_urls = ["com.browcyl.kurirgo://login-callback/"]
+minimum_password_length = 8
+
+[auth.email]
+enable_signup = true
+enable_confirmations = true
+
+[functions.username-login]
+verify_jwt = false
+
+[functions.geocode]
+verify_jwt = false
+
+[functions.google-geocode]
+verify_jwt = false

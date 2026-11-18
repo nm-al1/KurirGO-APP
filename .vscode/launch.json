@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "KurirGO Android",
+      "request": "launch",
+      "type": "dart",
+      "deviceId": "8a79485d",
+      "args": ["--flavor", "production"]
+    },
+    {
+      "name": "KurirGO Demo Android",
+      "request": "launch",
+      "type": "dart",
+      "deviceId": "8a79485d",
+      "args": ["--flavor", "demo", "--dart-define=DEMO_MODE=true"]
+    }
+  ]
+}
