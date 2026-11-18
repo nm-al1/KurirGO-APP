@@ -56,3 +56,8 @@ Bagikan-*/
 .codegraph/
 scratch/
 
+# Docs and Agent Skills
+docs/
+.agents/
+
+
