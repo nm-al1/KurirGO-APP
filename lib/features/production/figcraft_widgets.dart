@@ -76,7 +76,12 @@ class FigcraftTabs extends StatelessWidget {
   Widget build(BuildContext context) => SafeArea(
     top: false,
     child: Padding(
-      padding: const EdgeInsets.fromLTRB(20, 8, 20, 12),
+      padding: EdgeInsets.fromLTRB(
+        MediaQuery.sizeOf(context).width < 360 ? 4 : 20,
+        8,
+        MediaQuery.sizeOf(context).width < 360 ? 4 : 20,
+        12,
+      ),
       child: Container(
         padding: const EdgeInsets.all(5),
         decoration: BoxDecoration(
@@ -92,12 +97,18 @@ class FigcraftTabs extends StatelessWidget {
               (Icons.person_outline, 'Profil'),
             ].indexed)
               Expanded(
+                flex: MediaQuery.textScalerOf(context).scale(10) > 13
+                    ? [8, 11, 13, 8][entry.$1]
+                    : 1,
                 child: TextButton(
                   style: TextButton.styleFrom(
                     padding: const EdgeInsets.symmetric(
                       horizontal: 2,
                       vertical: 10,
                     ),
+                    animationDuration: MediaQuery.disableAnimationsOf(context)
+                        ? Duration.zero
+                        : const Duration(milliseconds: 180),
                     minimumSize: const Size(48, 48),
                     foregroundColor: selected == entry.$1 ? ink : Colors.white,
                     backgroundColor: selected == entry.$1
@@ -105,11 +116,17 @@ class FigcraftTabs extends StatelessWidget {
                         : Colors.transparent,
                   ),
                   onPressed: () => onChanged(entry.$1),
-                  child: Column(
+                  child: Flex(
+                    direction:
+                        MediaQuery.sizeOf(context).width >= 390 &&
+                            MediaQuery.textScalerOf(context).scale(10) <= 11
+                        ? Axis.horizontal
+                        : Axis.vertical,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Icon(entry.$2.$1, size: 19),
-                      const SizedBox(height: 3),
+                      const SizedBox(height: 3, width: 4),
                       Text(
                         entry.$2.$2,
                         style: const TextStyle(

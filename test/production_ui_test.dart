@@ -144,6 +144,19 @@ void main() {
         await mount(CourierHome(runtime: c));
         expect(find.byType(DeliverySummary), findsOneWidget);
         expect(find.byType(FigcraftTabs), findsOneWidget);
+        final nav = find.byType(FigcraftTabs);
+        for (final name in ['Riwayat', 'Performa', 'Profil', 'Home']) {
+          final label = find.descendant(of: nav, matching: find.text(name));
+          final paragraph = tester.renderObject<RenderParagraph>(label);
+          final boxes = paragraph.getBoxesForSelection(
+            TextSelection(baseOffset: 0, extentOffset: name.length),
+          );
+          expect(boxes.map((box) => box.top).toSet(), hasLength(1));
+          await tester.tap(label);
+          await tester.pump(const Duration(milliseconds: 16));
+        }
+        await tester.pumpAndSettle();
+        expect(find.byType(DeliverySummary), findsOneWidget);
         await capture('live_home');
         for (final name in ['Riwayat', 'Performa', 'Profil', 'Home']) {
           await tester.tap(find.text(name).last);

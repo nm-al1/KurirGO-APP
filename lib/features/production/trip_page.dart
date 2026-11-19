@@ -140,6 +140,16 @@ class _TripPreparationState extends State<TripPreparation> {
                 ),
               ),
             if (!preview)
+              AnimatedSwitcher(
+                duration: MediaQuery.disableAnimationsOf(context)
+                    ? Duration.zero
+                    : const Duration(milliseconds: 160),
+                child: Text(
+                  '${verified.length} dari ${ids.length} pesanan terverifikasi',
+                  key: ValueKey(verified.length),
+                ),
+              ),
+            if (!preview)
               for (final entry in ids.reversed.indexed)
                 Card(
                   child: CheckboxListTile(

@@ -171,8 +171,9 @@ class _CourierHomeState extends State<CourierHome> {
           duration: MediaQuery.disableAnimationsOf(context)
               ? Duration.zero
               : const Duration(milliseconds: 180),
+          switchInCurve: Curves.easeOutCubic,
           child: ListView(
-            key: ValueKey(tab),
+            key: PageStorageKey(tab),
             padding: const EdgeInsets.all(20),
             children: [
               if (tab == 0) ...[CourierIdentity(c), const SizedBox(height: 22)],

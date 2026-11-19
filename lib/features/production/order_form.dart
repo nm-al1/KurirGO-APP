@@ -188,6 +188,9 @@ class _OrderFormState extends State<OrderForm> {
           ),
           const SizedBox(height: 16),
           FilledButton(
+            style: FilledButton.styleFrom(
+              minimumSize: const Size.fromHeight(48),
+            ),
             onPressed: busy ? null : save,
             child: Text(busy ? 'Menyimpan…' : 'Simpan pesanan'),
           ),

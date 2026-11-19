@@ -275,7 +275,19 @@ Future<T?> openPage<T>(BuildContext context, Widget page) =>
             ? Duration.zero
             : const Duration(milliseconds: 180),
         pageBuilder: (_, _, _) => page,
-        transitionsBuilder: (_, animation, _, child) =>
-            FadeTransition(opacity: animation, child: child),
+        transitionsBuilder: (_, animation, _, child) {
+          final eased = animation.drive(CurveTween(curve: Curves.easeOutCubic));
+          return FadeTransition(
+            opacity: eased,
+            child: AnimatedBuilder(
+              animation: eased,
+              child: child,
+              builder: (_, page) => Transform.translate(
+                offset: Offset(0, 8 * (1 - eased.value)),
+                child: page,
+              ),
+            ),
+          );
+        },
       ),
     );
