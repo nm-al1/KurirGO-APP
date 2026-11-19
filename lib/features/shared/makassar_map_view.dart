@@ -109,7 +109,7 @@ class _MakassarMapViewState extends State<MakassarMapView> {
   }
 
   void moveRider() {
-    if (ready && following && (widget.gps == null || widget.gps!.onRoute)) {
+    if (ready && following && (widget.gps == null || widget.gps!.reliable)) {
       controller.move(
         rider,
         widget.gps != null && !gpsFocused ? 16 : controller.camera.zoom,
@@ -123,14 +123,15 @@ class _MakassarMapViewState extends State<MakassarMapView> {
   void recenter() {
     setState(() => following = true);
     if (widget.mode == MapDisplayMode.preview ||
-        (widget.gps != null && !widget.gps!.onRoute)) {
+        (widget.gps != null && !widget.gps!.reliable)) {
       fitRoute();
     } else {
       controller.move(
         rider,
-        controller.camera.zoom,
+        widget.gps != null && !gpsFocused ? 16 : controller.camera.zoom,
         offset: widget.riderOffset,
       );
+      if (widget.gps != null) gpsFocused = true;
     }
   }
 

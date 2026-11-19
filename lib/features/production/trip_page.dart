@@ -327,6 +327,8 @@ class _TripPageState extends State<TripPage> with WidgetsBindingObserver {
   Widget build(BuildContext context) {
     final id = c.remaining.firstOrNull;
     final order = id == null ? null : c.order(id);
+    final bill = order?['bill'] as int? ?? 0;
+    final cashReceived = parseWholeNumber(received.text);
     final destination = id == null ? points.first : points[currentLeg + 1];
     return ListenableBuilder(
       listenable: c.gps,
@@ -590,26 +592,40 @@ class _TripPageState extends State<TripPage> with WidgetsBindingObserver {
                     ),
                     const SizedBox(height: 24),
                     DropdownButtonFormField<String>(
+                      key: ValueKey(id),
                       isExpanded: true,
-                      hint: const Text(
-                        'Pilih metode pembayaran',
-                        style: TextStyle(color: Color(0xFFA1A1AA)),
-                      ),
+                      itemHeight: null,
+                      dropdownColor: const Color(0xFF27272A),
+                      borderRadius: BorderRadius.circular(12),
+                      icon: const Icon(Icons.keyboard_arrow_down, color: lime),
+                      hint: const Text('Pilih metode pembayaran'),
                       initialValue: method,
                       decoration: const InputDecoration(
                         labelText: 'Metode pembayaran',
-                        hintText: 'Pilih metode pembayaran',
                       ),
-                      items: const [
-                        DropdownMenuItem(
-                          value: 'cash',
-                          child: Text('Tunai / COD'),
-                        ),
-                        DropdownMenuItem(value: 'qris', child: Text('QRIS')),
-                        DropdownMenuItem(
-                          value: 'transfer',
-                          child: Text('Transfer'),
-                        ),
+                      items: [
+                        for (final (value, label, icon) in [
+                          ('cash', 'Tunai / COD', Icons.payments_outlined),
+                          ('qris', 'QRIS', Icons.qr_code),
+                          (
+                            'transfer',
+                            'Transfer bank',
+                            Icons.account_balance_outlined,
+                          ),
+                        ])
+                          DropdownMenuItem(
+                            value: value,
+                            child: ConstrainedBox(
+                              constraints: const BoxConstraints(minHeight: 48),
+                              child: Row(
+                                children: [
+                                  Icon(icon, size: 20, color: lime),
+                                  const SizedBox(width: 10),
+                                  Expanded(child: Text(label)),
+                                ],
+                              ),
+                            ),
+                          ),
                       ],
                       onChanged: busy
                           ? null
@@ -624,6 +640,7 @@ class _TripPageState extends State<TripPage> with WidgetsBindingObserver {
                     if (method == 'cash') ...[
                       TextField(
                         controller: received,
+                        enabled: !busy,
                         keyboardType: TextInputType.number,
                         inputFormatters: [const IndonesianIntegerFormatter()],
                         decoration: const InputDecoration(
@@ -633,34 +650,67 @@ class _TripPageState extends State<TripPage> with WidgetsBindingObserver {
                         ),
                         onChanged: (_) => setState(() {}),
                       ),
-                      const SizedBox(height: 8),
+                      const SizedBox(height: 12),
                       Wrap(
                         spacing: 8,
+                        runSpacing: 4,
                         children: [
-                          for (final amount in {
-                            (order['bill'] as int),
-                            50000,
-                            100000,
-                            150000,
-                            200000,
-                          })
-                            ActionChip(
+                          for (final amount in [
+                            bill,
+                            for (final candidate in [
+                              50000,
+                              100000,
+                              150000,
+                              200000,
+                              250000,
+                              300000,
+                            ])
+                              if (candidate > bill) candidate,
+                          ].take(4))
+                            ChoiceChip(
                               label: Text(
-                                amount == order['bill']
-                                    ? 'Uang pas'
-                                    : rupiah(amount),
+                                amount == bill ? 'Uang pas' : rupiah(amount),
                               ),
-                              onPressed: busy
+                              selected: cashReceived == amount,
+                              backgroundColor: const Color(0xFF242A16),
+                              selectedColor: lime,
+                              side: BorderSide(
+                                color: cashReceived == amount
+                                    ? lime
+                                    : const Color(0xFF839C42),
+                              ),
+                              showCheckmark: false,
+                              labelStyle: TextStyle(
+                                color: cashReceived == amount
+                                    ? ink
+                                    : Colors.white,
+                              ),
+                              onSelected: busy
                                   ? null
-                                  : () => setState(
-                                      () =>
-                                          received.text = groupedNumber(amount),
-                                    ),
+                                  : (_) {
+                                      FocusScope.of(context).unfocus();
+                                      setState(
+                                        () => received.text = groupedNumber(
+                                          amount,
+                                        ),
+                                      );
+                                    },
                             ),
                         ],
                       ),
+                      const SizedBox(height: 12),
                       Text(
-                        'Kembalian ${rupiah(((parseWholeNumber(received.text) ?? 0) - (order['bill'] as int)).clamp(0, maxRupiah))}',
+                        cashReceived == null
+                            ? 'Pilih nominal atau isi jumlah uang tunai.'
+                            : cashReceived < bill
+                            ? 'Kurang ${rupiah(bill - cashReceived)}'
+                            : 'Kembalian ${rupiah(cashReceived - bill)}',
+                        style: TextStyle(
+                          fontWeight: FontWeight.w700,
+                          color: cashReceived != null && cashReceived < bill
+                              ? const Color(0xFFFDA4AF)
+                              : Colors.white,
+                        ),
                       ),
                     ],
                     if (method == 'qris' || method == 'transfer') ...[
@@ -692,6 +742,9 @@ class _TripPageState extends State<TripPage> with WidgetsBindingObserver {
                           busy ||
                               c.hasConflict ||
                               method == null ||
+                              (method == 'cash' &&
+                                  (cashReceived == null ||
+                                      cashReceived < bill)) ||
                               (method != 'cash' && !nonCashConfirmed)
                           ? null
                           : () async {

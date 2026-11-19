@@ -61,7 +61,15 @@ class _AuthPageState extends State<AuthPage> {
             'phone': fields[4].text.trim(),
           },
         );
-        message = 'Pendaftaran diterima. Verifikasi email sebelum masuk.';
+        if (!mounted) return;
+        final email = fields[2].text.trim();
+        FocusManager.instance.primaryFocus?.unfocus();
+        fields[3].clear();
+        fields[5].clear();
+        message =
+            'Pendaftaran diterima. Cek email $email (termasuk folder spam) dan klik tautan verifikasi sebelum masuk.';
+        ScaffoldMessenger.of(context)
+            .showSnackBar(SnackBar(content: Text(message!)));
         register = false;
       } else {
         final result = await widget.backend.functions.invoke(
@@ -78,6 +86,13 @@ class _AuthPageState extends State<AuthPage> {
           );
         }
         await auth.setSession(token);
+      }
+    } on FunctionException catch (error) {
+      if (mounted) {
+        final explanation = error.status == 401
+            ? 'Login ditolak. Periksa username dan password, pastikan email sudah diverifikasi, atau tunggu jika sudah berkali-kali mencoba.'
+            : 'Layanan login belum bisa diakses. Coba lagi nanti.';
+        problem(context, StateError(explanation));
       }
     } catch (error) {
       if (mounted) problem(context, error);
@@ -252,6 +267,11 @@ class _AuthPageState extends State<AuthPage> {
                             : 'Browcyl Delivery · Makassar',
                       ),
                       const SizedBox(height: 24),
+                      if (message != null)
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 20),
+                          child: Text(message!, semanticsLabel: message),
+                        ),
                       if (register && !reset && !widget.recovery)
                         input(
                           0,
@@ -290,11 +310,6 @@ class _AuthPageState extends State<AuthPage> {
                           'Konfirmasi password',
                           'Ulangi password',
                           password: true,
-                        ),
-                      if (message != null)
-                        Padding(
-                          padding: const EdgeInsets.only(bottom: 20),
-                          child: Text(message!, semanticsLabel: message),
                         ),
                       FilledButton(
                         onPressed: busy ? null : submit,

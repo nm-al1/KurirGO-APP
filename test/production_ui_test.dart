@@ -218,6 +218,29 @@ void main() {
         await tester.runAsync(() => c.startTrip(route, ids));
         await mount(TripPage(runtime: c));
         await capture('live_navigation');
+        final payment = find.byType(DropdownButtonFormField<String>);
+        await tester.scrollUntilVisible(
+          payment,
+          200,
+          scrollable: find.byType(Scrollable).first,
+        );
+        await tester.pumpAndSettle();
+        await tester.tap(payment);
+        await tester.pumpAndSettle();
+        await tester.tap(find.text('Tunai / COD').last);
+        await tester.pumpAndSettle();
+        final exact = find.widgetWithText(ChoiceChip, 'Uang pas');
+        await tester.scrollUntilVisible(
+          exact,
+          150,
+          scrollable: find.byType(Scrollable).first,
+        );
+        await tester.pumpAndSettle();
+        await tester.tap(exact);
+        await tester.pumpAndSettle();
+        expect(tester.widget<ChoiceChip>(exact).selected, isTrue);
+        expect(find.text('Kembalian Rp 0'), findsOneWidget);
+        expect(find.widgetWithText(ChoiceChip, 'Rp 100.000'), findsNothing);
         await tester.pumpWidget(const SizedBox.shrink());
         late CourierRuntime demo;
         await tester.runAsync(() async {

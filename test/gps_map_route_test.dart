@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:latlong2/latlong.dart';
 import 'package:kurir_go/data/route_service.dart';
 import 'package:kurir_go/features/controllers/gps_navigation.dart';
 import 'package:kurir_go/features/controllers/navigation_simulation_controller.dart';
@@ -53,6 +54,20 @@ void main() {
       for (final line in layer.polylines.skip(1)) {
         expect(line.color, const Color(0xFF64748B));
       }
+      await gps.start();
+      gps.fix = LocationFix(
+        const LatLng(-5.18, 119.44),
+        DateTime.now(),
+        10,
+        0,
+        0,
+      );
+      gps.setLeg(1, route.legs.last);
+      await tester.pumpAndSettle();
+      final map = tester.widget<FlutterMap>(find.byType(FlutterMap));
+      expect(gps.onRoute, isFalse);
+      expect(map.mapController!.camera.center, gps.fix!.point);
+      expect(map.mapController!.camera.zoom, 16);
       await tester.tap(find.byTooltip('Lihat seluruh rute'));
       await tester.pumpAndSettle();
       expect(find.byTooltip('Kunci posisi kurir'), findsOneWidget);
